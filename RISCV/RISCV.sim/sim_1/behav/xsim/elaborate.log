@@ -1,0 +1,33 @@
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 612e63cda488471bb889806531e89662 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RISC_V_behav xil_defaultlib.tb_RISC_V xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port ALU_CC [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:44]
+WARNING: [VRFC 10-278] actual bit length 33 differs from formal bit length 32 for port rd [D:/OneDrive/EECS 31L/FInal/datapath.sv:64]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port ra1 [D:/OneDrive/EECS 31L/FInal/datapath.sv:67]
+WARNING: [VRFC 10-278] actual bit length 33 differs from formal bit length 32 for port inst_code [D:/OneDrive/EECS 31L/FInal/datapath.sv:69]
+WARNING: [VRFC 10-278] actual bit length 65 differs from formal bit length 64 for port d1 [D:/OneDrive/EECS 31L/FInal/datapath.sv:73]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUOp [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:54]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUop [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:57]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [D:/OneDrive/EECS 31L/FInal/ALUController.sv:35]
+WARNING: [VRFC 10-1783] select index -2 into instruction is out of bounds [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.instructionmemory
+Compiling module xil_defaultlib.regfile_default
+Compiling module xil_defaultlib.imm_Gen
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datamemory
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.ALUController
+Compiling module xil_defaultlib.RISC_V
+Compiling module xil_defaultlib.tb_RISC_V
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RISC_V_behav
