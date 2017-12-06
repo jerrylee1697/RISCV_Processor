@@ -45,7 +45,7 @@ module regfile #(
     always @(negedge clk) begin
         if (reset) begin
             for (i = 0; i< REGISTER_SIZE; i = i + 1) 
-                reg_file[i] <= 0;
+                reg_file[i] <= 4;
         end
         if (RegWrite) begin
             reg_file[wa] <= wd;

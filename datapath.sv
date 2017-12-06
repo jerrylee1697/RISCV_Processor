@@ -34,7 +34,7 @@ module datapath #(
     input logic [ALU_CC_W-1:0] ALU_CC,
     output logic [DATA_W-1:0] ALUresult,
     output logic [INS_W-1:0] instruction,
-    output logic [DATA_W-1:0] mux_out,
+    output logic [DATA_W-1:0] Mux_out,
     output logic [DATA_W-1:0] rd1_out,
     output logic [DATA_W-1:0] rd2_out,
     output logic [8:0] PC_output
@@ -54,6 +54,12 @@ module datapath #(
     wire [63:0] dm_out;
     wire [63:0] dm_mux_out;
     assign adder_b = 4'b0100;
+    
+    assign Mux_out = mux_out;
+    
+    assign rd1_out = read_data_1;
+    assign rd2_out = read_data_2;
+    
     always @(posedge clk) begin
         if (reset == 1) begin
             init = 9'b000000000;

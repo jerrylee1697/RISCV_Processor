@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include" \
+"../../../../../ALUController.sv" \
+"../../../../../adder.sv" \
+"../../../../../alu.sv" \
+"../../../../../controller.sv" \
+"../../../../../datamemory.sv" \
+"../../../../../datapath.sv" \
+"../../../../../flopr.sv" \
+"../../../../../imm_Gen.sv" \
+"../../../../../instructionmemory.sv" \
+"../../../../../mux2.sv" \
+"../../../../../regfile.sv" \
+"../../../../../RISC-V.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

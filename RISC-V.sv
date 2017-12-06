@@ -54,7 +54,7 @@ module RISC_V #(
         .ALU_CC(ALU_CC), 
         .ALUresult(ALU_Result), 
         .instruction(instruction), 
-        .mux_out(mux_out), 
+        .Mux_out(mux_out), 
         .rd1_out(rd1_out), 
         .rd2_out(rd2_out),
         .PC_output(PC_out)

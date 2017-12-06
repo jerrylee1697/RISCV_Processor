@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Tue Dec  5 23:49:11 2017
+# Process ID: 4256
+# Current directory: D:/OneDrive/EECS 31L/FInal/RISCV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17320 D:\OneDrive\EECS 31L\FInal\RISCV\RISCV.xpr
+# Log file: D:/OneDrive/EECS 31L/FInal/RISCV/vivado.log
+# Journal file: D:/OneDrive/EECS 31L/FInal/RISCV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_RISC_V.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_RISC_V [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top RISC_V [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+close_sim
+launch_simulation
+source RISC_V.tcl
+add_force {/RISC_V/clk} -radix hex {1 0ns}
+add_force {/RISC_V/reset} -radix hex {1 0ns}
+run all
+add_force {/RISC_V/reset} -radix hex {0 0ns}
+run all
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_RISC_V [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+close_sim
+launch_simulation
+source tb_RISC_V.tcl
+close_sim

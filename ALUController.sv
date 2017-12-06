@@ -21,23 +21,21 @@
 
 
 module ALUController(
-        // Inputs
-input [1:0] ALUop,  // coming from main control unit
-input [6:0] Funct7, // bits 25 to 31 of the instructions
-input [2:0] Funct3, // bits 12 to 14 of the instructions
-
-// Output
-output [3:0] Operation // operation selection for ALU
-);
-
-
-
-assign Operation = (ALUop == {0,0} && Funct7 == {1'bx,1'bx,1'bx,1'bx,1'bx,1'bx,1'bx} && Funct3 == {1'bx,1'bx,1'bx}) ? 4'b0010:
-                   ((ALUop == 2'bx1 && Funct7 == 7'bxxxxxxx && Funct3 == 3'bxxx) ? 4'b0110:
-                   ((ALUop == 2'b1x && Funct7 == 7'b0000000 && Funct3 == 3'b000) ? 4'b0010:
-                   ((ALUop == 2'b1x && Funct7 == 7'b0100000 && Funct3 == 3'b000) ? 4'b0110:
-                   ((ALUop == 2'b1x && Funct7 == 7'b0000000 && Funct3 == 3'b111) ? 4'b0000:
-                   ((ALUop == 2'b1x && Funct7 == 7'b0000000 && Funct3 == 3'b110) ? 4'b0001:
-                   4'bzzzz)))));
-                   
+    // Inputs
+    input [1:0] ALUop,  // coming from main control unit
+    input [6:0] Funct7, // bits 25 to 31 of the instructions
+    input [2:0] Funct3, // bits 12 to 14 of the instructions
+    
+    // Output
+    output [3:0] Operation // operation selection for ALU
+    );
+    
+    assign Operation = (ALUop == 2'b00) ? 4'b0010:
+                       ((ALUop[0] == 1'b1) ? 4'b0110:
+                       ((ALUop[1] == 1'b1 && Funct7 == 7'b0000000 && Funct3 == 3'b000) ? 4'b0010:
+                       ((ALUop[1] == 1'b1 && Funct7 == 7'b0100000 && Funct3 == 3'b000) ? 4'b0110:
+                       ((ALUop[1] == 1'b1 && Funct7 == 7'b0000000 && Funct3 == 3'b111) ? 4'b0000:
+                       ((ALUop[1] == 1'b1 && Funct7 == 7'b0000000 && Funct3 == 3'b110) ? 4'b0001:
+                       4'bzzzz)))));
+                       
 endmodule
