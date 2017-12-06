@@ -38,9 +38,9 @@ always @(MemRead or MemWrite or a or wd) begin
         rd = Memory[a];
     end
     else if (MemWrite == 1) begin
-        Memory[a] = wd;
+        Memory[a] <= wd;
     end
-    
-
+   
 end
+
 endmodule

@@ -1,0 +1,29 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/ALUController.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUController
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [D:/OneDrive/EECS 31L/FInal/ALUController.sv:35]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC-V.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datamemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/flopr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/imm_Gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_Gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/instructionmemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionmemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC_V_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RISC_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
