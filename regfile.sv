@@ -26,27 +26,35 @@ module regfile #(
     parameter REGISTER_SIZE = 2**ADDRESS_WIDTH
 )(
     input logic clk,
+    input logic reset,
     input logic RegWrite,
     input logic [ADDRESS_WIDTH-1:0] ra1, ra2, wa,
     input logic [DATA_WIDTH-1:0] wd,
     output logic [DATA_WIDTH-1:0] rd1, rd2
     );
     
-    logic [REGISTER_SIZE-1:0] reg_file [DATA_WIDTH-1:0];
-    
     integer i;
+    
+    logic [REGISTER_SIZE-1:0] reg_file [DATA_WIDTH-1:0];
+
     initial begin
         for (i = 0; i< REGISTER_SIZE; i = i + 1) 
             reg_file[i] <= 0;
     end
     
     always @(posedge clk) begin
-        if (RegWrite == 1) begin
+        if (reset) begin
+            for (i = 0; i< REGISTER_SIZE; i = i + 1) 
+                reg_file[i] <= 0;
+        end
+        if (RegWrite) begin
             reg_file[wa] <= wd;
         end
+ 
     end
+
     
     assign rd1 = reg_file[ra1];
     assign rd2 = reg_file[ra2];
-    
+
 endmodule

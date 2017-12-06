@@ -69,8 +69,8 @@ module datapath #(
     imm_Gen sign_extender(regwire, extender_out);
     mux2 ALU_mux(read_data_2, extender_out, ALUsrc, mux_out);
     alu dp_alu(read_data_1, mux_out, ALU_CC, ALUout);
-    datamemory dm(MemRead, MemWrite, ALUresult[8:0], read_data_2, dm_out);
-    mux2 dm_mux(dm_out, ALUresult, dm_mux_out);
+    datamemory dm(MemRead, MemWrite, ALUout[8:0], read_data_2, dm_out);
+    mux2 dm_mux(dm_out, ALUout, dm_mux_out);
     
     assign ALUresult = ALUout;
     

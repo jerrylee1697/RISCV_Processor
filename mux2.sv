@@ -29,8 +29,7 @@ module mux2 #(
     );
     
     assign y = (s == 0) ? d0:
-                (s == 1) ? d0:
-                1'bz;
+                d1;
 //    always begin
 //        if (s == 0) begin
 //            y <= d0;
