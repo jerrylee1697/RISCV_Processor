@@ -32,16 +32,20 @@ module datapath #(
     ALUsrc, MemWrite,
     MemRead,
     input logic [ALU_CC_W-1:0] ALU_CC,
-    output logic [DATA_W:0] ALUresult,
-    output logic [INS_W-1:0] instruction
+    output logic [DATA_W-1:0] ALUresult,
+    output logic [INS_W-1:0] instruction,
+    output logic [DATA_W-1:0] mux_out,
+    output logic [DATA_W-1:0] rd1_out,
+    output logic [DATA_W-1:0] rd2_out,
+    output logic [8:0] PC_output
     );
     reg [8:0] adder_b;
     reg [8:0] init;
     wire [8:0] IM_addr;
     logic [8:0] adder_out;
-    logic [8:0] PC_out;
-    logic [32:0] IM_out;
-    wire [32:0] regwire;
+    wire [8:0] PC_out;
+    logic [31:0] IM_out;
+    wire [31:0] regwire;
     wire [63:0]extender_out;
     wire [63:0] read_data_1;
     wire [63:0] read_data_2;
@@ -58,10 +62,26 @@ module datapath #(
             init <= PC_out;
         end
     end
-    flopr flipflop(clk, reset, adder_out, PC_out);
-    adder ad(init, adder_b, adder_out);
-    assign IM_addr = PC_out;
-    instructionmemory IM(IM_addr, IM_out);
+    flopr flipflop(
+        .clk(clk), 
+        .reset(reset), 
+        .d(adder_out), 
+        .q(PC_out)
+    );
+    adder ad(
+        .a(init), 
+        .b(adder_b), 
+        .y(adder_out)
+        );
+//    assign IM_addr = PC_out;
+    assign PC_output = PC_out;
+    instructionmemory IM(
+        .ra(PC_out), 
+        .rd(IM_out)
+        );
+    always @(posedge clk) begin
+        $display ("Instruction is %b", IM_out);
+    end
     assign instruction = IM_out;
     assign regwire = IM_out;
     regfile rf(clk, RegWrite, regwire[19-15], regwire[24-20], regwire[11-7], dm_mux_out, read_data_1, read_data_2);
