@@ -42,7 +42,7 @@ module regfile #(
             reg_file[i] <= 0;
     end
     
-    always @(posedge clk) begin
+    always @(negedge clk) begin
         if (reset) begin
             for (i = 0; i< REGISTER_SIZE; i = i + 1) 
                 reg_file[i] <= 0;

@@ -41,7 +41,6 @@ always @(MemRead or MemWrite or a or wd) begin
         Memory[a] = wd;
     end
     
-//    assign rd = (MemRead == 1) ? Memory[a]:
-//                64'd0;
+
 end
 endmodule
