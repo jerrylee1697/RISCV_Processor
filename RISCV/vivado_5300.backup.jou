@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Dec  6 18:22:04 2017
+# Process ID: 5300
+# Current directory: D:/OneDrive/EECS 31L/Final/RISCV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22996 D:\OneDrive\EECS 31L\Final\RISCV\RISCV.xpr
+# Log file: D:/OneDrive/EECS 31L/Final/RISCV/vivado.log
+# Journal file: D:/OneDrive/EECS 31L/Final/RISCV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/OneDrive/EECS 31L/Final/RISCV/RISCV.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_RISC_V.tcl
+add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source tb_RISC_V.tcl
+add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
+relaunch_sim
+add_wave {{/tb_RISC_V/tb_RISC_V/DP/rf}} 
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source tb_RISC_V.tcl
+add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
+relaunch_sim
+add_wave {{/tb_RISC_V/tb_RISC_V/DP/rf}} 
+relaunch_sim
+close_sim
+launch_simulation
+source tb_RISC_V.tcl
+add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
+relaunch_sim
+add_wave {{/tb_RISC_V/tb_RISC_V/DP/rf}} 
+relaunch_sim
+close_sim
+launch_simulation
+source tb_RISC_V.tcl
+add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
+relaunch_sim
+close_sim

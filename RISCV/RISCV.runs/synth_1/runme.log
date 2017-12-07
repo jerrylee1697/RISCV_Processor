@@ -1,0 +1,993 @@
+
+*** Running vivado
+    with args -log basys3_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source basys3_wrapper.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source basys3_wrapper.tcl -notrace
+Command: synth_design -top basys3_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15768 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 345.328 ; gain = 101.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'basys3_wrapper' [D:/OneDrive/EECS 31L/Final/basys3_wrapper.sv:23]
+INFO: [Synth 8-638] synthesizing module 'RISC_V' [D:/OneDrive/EECS 31L/Final/RISC-V.sv:23]
+	Parameter DATA_W bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'datapath' [D:/OneDrive/EECS 31L/Final/datapath.sv:22]
+	Parameter PC_W bound to: 9 - type: integer 
+	Parameter INS_W bound to: 32 - type: integer 
+	Parameter RF_ADDRESS bound to: 5 - type: integer 
+	Parameter DATA_W bound to: 64 - type: integer 
+	Parameter DM_ADDRESS bound to: 9 - type: integer 
+	Parameter ALU_CC_W bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'flopr' [D:/OneDrive/EECS 31L/Final/flopr.sv:23]
+	Parameter WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (1#1) [D:/OneDrive/EECS 31L/Final/flopr.sv:23]
+INFO: [Synth 8-638] synthesizing module 'adder' [D:/OneDrive/EECS 31L/Final/adder.sv:23]
+	Parameter WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (2#1) [D:/OneDrive/EECS 31L/Final/adder.sv:23]
+INFO: [Synth 8-638] synthesizing module 'instructionmemory' [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:23]
+	Parameter INS_ADDRESS bound to: 9 - type: integer 
+	Parameter INS_W bound to: 32 - type: integer 
+WARNING: [Synth 8-3848] Net Inst_mem[127] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[126] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[125] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[124] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[123] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[122] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[121] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[120] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[119] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[118] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[117] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[116] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[115] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[114] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[113] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[112] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[111] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[110] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[109] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[108] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[107] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[106] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[105] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[104] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[103] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[102] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[101] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[100] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[99] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[98] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[97] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[96] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[95] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[94] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[93] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[92] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[91] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[90] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[89] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[88] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[87] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[86] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[85] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[84] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[83] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[82] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[81] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[80] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[79] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[78] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[77] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[76] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[75] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[74] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[73] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[72] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[71] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[70] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[69] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[68] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[67] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[66] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[65] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[64] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[63] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[62] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[61] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[60] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[59] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[58] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[57] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[56] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[55] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[54] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[53] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[52] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[51] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[50] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[49] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[48] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[47] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[46] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[45] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[44] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[43] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[42] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[41] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[40] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[39] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[38] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[37] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[36] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[35] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[34] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[33] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[32] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[31] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[30] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[29] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+WARNING: [Synth 8-3848] Net Inst_mem[28] in module/entity instructionmemory does not have driver. [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:31]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'instructionmemory' (3#1) [D:/OneDrive/EECS 31L/Final/instructionmemory.sv:23]
+INFO: [Synth 8-638] synthesizing module 'regfile' [D:/OneDrive/EECS 31L/Final/regfile.sv:23]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDRESS_WIDTH bound to: 5 - type: integer 
+	Parameter REGISTER_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'regfile' (4#1) [D:/OneDrive/EECS 31L/Final/regfile.sv:23]
+INFO: [Synth 8-638] synthesizing module 'imm_Gen' [D:/OneDrive/EECS 31L/Final/imm_Gen.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'imm_Gen' (5#1) [D:/OneDrive/EECS 31L/Final/imm_Gen.sv:23]
+INFO: [Synth 8-638] synthesizing module 'mux2' [D:/OneDrive/EECS 31L/Final/mux2.sv:23]
+	Parameter WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (6#1) [D:/OneDrive/EECS 31L/Final/mux2.sv:23]
+INFO: [Synth 8-638] synthesizing module 'alu' [D:/OneDrive/EECS 31L/Final/alu.sv:23]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter OPCODE_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'alu' (7#1) [D:/OneDrive/EECS 31L/Final/alu.sv:23]
+INFO: [Synth 8-638] synthesizing module 'datamemory' [D:/OneDrive/EECS 31L/Final/datamemory.sv:23]
+	Parameter DM_ADDRESS bound to: 9 - type: integer 
+	Parameter DATA_W bound to: 64 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'Memory' should be on the sensitivity list [D:/OneDrive/EECS 31L/Final/datamemory.sv:36]
+INFO: [Synth 8-256] done synthesizing module 'datamemory' (8#1) [D:/OneDrive/EECS 31L/Final/datamemory.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (9#1) [D:/OneDrive/EECS 31L/Final/datapath.sv:22]
+INFO: [Synth 8-638] synthesizing module 'controller' [D:/OneDrive/EECS 31L/Final/controller.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'controller' (10#1) [D:/OneDrive/EECS 31L/Final/controller.sv:23]
+INFO: [Synth 8-638] synthesizing module 'ALUController' [D:/OneDrive/EECS 31L/Final/ALUController.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'ALUController' (11#1) [D:/OneDrive/EECS 31L/Final/ALUController.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'RISC_V' (12#1) [D:/OneDrive/EECS 31L/Final/RISC-V.sv:23]
+WARNING: [Synth 8-689] width (16) of port connection 'ALU_Result' does not match port width (64) of module 'RISC_V' [D:/OneDrive/EECS 31L/Final/basys3_wrapper.sv:46]
+INFO: [Synth 8-638] synthesizing module 'seg_display' [D:/OneDrive/EECS 31L/Final/seg_display.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'seg_display' (13#1) [D:/OneDrive/EECS 31L/Final/seg_display.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'basys3_wrapper' (14#1) [D:/OneDrive/EECS 31L/Final/basys3_wrapper.sv:23]
+WARNING: [Synth 8-3917] design basys3_wrapper has port dp driven by constant 1
+WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[19]
+WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[18]
+WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[17]
+WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[16]
+WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[15]
+WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[14]
+WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[13]
+WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[12]
+WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[11]
+WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[10]
+WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[9]
+WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[8]
+WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[7]
+WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[1]
+WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 409.336 ; gain = 165.055
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 409.336 ; gain = 165.055
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/OneDrive/EECS 31L/Final/const1.xdc]
+Finished Parsing XDC File [D:/OneDrive/EECS 31L/Final/const1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/OneDrive/EECS 31L/Final/const1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/basys3_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/basys3_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 762.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 762.418 ; gain = 518.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 762.418 ; gain = 518.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 762.418 ; gain = 518.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/OneDrive/EECS 31L/Final/alu.sv:46]
+INFO: [Synth 8-5546] ROM "Memory_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUSrc0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUOp0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element clk_divide_reg was removed.  [D:/OneDrive/EECS 31L/Final/basys3_wrapper.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUResult_reg' [D:/OneDrive/EECS 31L/Final/alu.sv:41]
+WARNING: [Synth 8-327] inferring latch for variable 'rd_reg' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[63]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[62]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[61]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[60]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[59]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[58]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[57]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[56]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[55]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[54]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[53]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[52]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[51]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[50]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[49]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[48]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[47]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[46]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[45]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[44]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[43]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[42]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[41]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[40]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[39]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[38]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[37]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[36]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[35]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[34]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[33]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[32]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[31]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[30]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[29]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[28]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[27]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[26]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[25]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[24]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[23]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[22]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[21]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[20]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[19]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[18]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[17]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[16]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[15]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[14]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[13]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[12]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[11]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[10]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[9]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[8]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[7]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[6]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[5]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[4]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[3]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[2]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[1]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[0]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 762.418 ; gain = 518.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Multipliers : 
+	                64x64  Multipliers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 69    
+	   3 Input     52 Bit        Muxes := 1     
+	   5 Input     52 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 136   
+	   5 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module flopr 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 64    
+	   2 Input      1 Bit        Muxes := 64    
+Module imm_Gen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     52 Bit        Muxes := 1     
+	   5 Input     52 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 1     
++---Multipliers : 
+	                64x64  Multipliers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module datamemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 64    
+Module datapath 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+Module controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module ALUController 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module seg_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Memory_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Memory_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [D:/OneDrive/EECS 31L/Final/alu.sv:41]
+WARNING: [Synth 8-6014] Unused sequential element clk_divide_reg was removed.  [D:/OneDrive/EECS 31L/Final/basys3_wrapper.sv:38]
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: PCIN+A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: PCIN+A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: PCIN+A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: PCIN+A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: PCIN+A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: PCIN+A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
+WARNING: [Synth 8-3917] design basys3_wrapper has port dp driven by constant 1
+WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[1]
+WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[31][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[30][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[29][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[28][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[27][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[26][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[25][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[24][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[23][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[22][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[21][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[20][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[19][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[18][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[17][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[16][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[15][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[14][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[13][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[12][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[7][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[6][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[5][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[4][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[31][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[30][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[29][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[28][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[27][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[26][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[25][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[24][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[23][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[22][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[21][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[20][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[19][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[18][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[17][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[16][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[15][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[14][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[13][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[12][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[7][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[31][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[30][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[29][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[28][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[27][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[26][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[25][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[24][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[23][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[22][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[21][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[20][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[19][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[18][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[17][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[16][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[15][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[14][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[13][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[12][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[7][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[6][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[5][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[4][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[31][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[30][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[29][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[28][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[27][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[26][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[25][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[24][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[23][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[22][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[21][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[20][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[19][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[18][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[17][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[16][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[15][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[14][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[13][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[12][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[7][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[6][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[5][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[4][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[31][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[30][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[29][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[28][3] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][63]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][62]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][61]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][60]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][59]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][58]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][57]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][56]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][55]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][54]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][53]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][52]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][51]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][50]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][49]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][48]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][47]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][46]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][45]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][44]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][43]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][42]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][41]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][40]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][39]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][38]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][37]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][36]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][35]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][34]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][33]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][32]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][31]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][30]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][29]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][28]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][27]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][26]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][25]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][24]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][23]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][22]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][21]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][20]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][19]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][18]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][17]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][16]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][15]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][14]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][13]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][12]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][11]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][10]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][9]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][8]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][7]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][6]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][5]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][4]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][3]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][2]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][1]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][0]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][63]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][62]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][61]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][60]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][59]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][58]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][57]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][56]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][55]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][54]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][53]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][52]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][51]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][50]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][49]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][48]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][47]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][46]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][45]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][44]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][43]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][42]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][41]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][40]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][39]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][38]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][37]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][36]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][35]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][34]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][33]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][32]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][31]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][30]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][29]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][28]) is unused and will be removed from module regfile.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 762.418 ; gain = 518.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|basys3_wrapper | A*B            | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|basys3_wrapper | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|basys3_wrapper | PCIN+A*B       | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|basys3_wrapper | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|basys3_wrapper | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|basys3_wrapper | PCIN+A*B       | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|basys3_wrapper | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|basys3_wrapper | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|basys3_wrapper | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|basys3_wrapper | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|basys3_wrapper | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|basys3_wrapper | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|basys3_wrapper | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|basys3_wrapper | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|basys3_wrapper | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|basys3_wrapper | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 783.551 ; gain = 539.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 794.441 ; gain = 550.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][1]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][12]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][0]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][16]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][9]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][13]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][5]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][10]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][14]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][2]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][2]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][6]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][8]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][4]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][11]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][15]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][3]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][7]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 812.387 ; gain = 568.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 812.387 ; gain = 568.105
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 812.387 ; gain = 568.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 812.387 ; gain = 568.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 812.387 ; gain = 568.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 812.387 ; gain = 568.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 812.387 ; gain = 568.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     3|
+|2     |CARRY4  |    12|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |     4|
+|5     |LUT2    |    43|
+|6     |LUT3    |    46|
+|7     |LUT4    |    33|
+|8     |LUT5    |    73|
+|9     |LUT6    |   417|
+|10    |MUXF7   |   136|
+|11    |MUXF8   |    68|
+|12    |FDCE    |     2|
+|13    |FDRE    |    92|
+|14    |LD      |  1126|
+|15    |IBUF    |     2|
+|16    |OBUF    |    12|
++------+--------+------+
+
+Report Instance Areas: 
++------+----------------+------------------+------+
+|      |Instance        |Module            |Cells |
++------+----------------+------------------+------+
+|1     |top             |                  |  2070|
+|2     |  processor_31L |RISC_V            |  2010|
+|3     |    ALUctrl     |ALUController     |     3|
+|4     |    DP          |datapath          |  2007|
+|5     |      dm        |datamemory        |  1598|
+|6     |      IM        |instructionmemory |     4|
+|7     |      ad        |adder             |     8|
+|8     |      dp_alu    |alu               |   173|
+|9     |      flipflop  |flopr             |   132|
+|10    |      rf        |regfile           |    85|
+|11    |  seg_display0  |seg_display       |     8|
++------+----------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 812.387 ; gain = 568.105
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5175 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 812.387 ; gain = 215.023
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 812.387 ; gain = 568.105
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1345 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1126 instances were transformed.
+  LD => LDCE: 1126 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+262 Infos, 289 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 812.387 ; gain = 581.055
+INFO: [Common 17-1381] The checkpoint 'D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/synth_1/basys3_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file basys3_wrapper_utilization_synth.rpt -pb basys3_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 812.387 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 14:43:25 2017...
