@@ -54,7 +54,7 @@ module controller(
                     1'bz))));
     assign MemRead = (opcode == 7'b0110011)? 1'b0:
                     ((opcode == 7'b0000011) ? 1'b1:
-                    ((opcode == 7'b0010011) ? 1'b1:
+                    ((opcode == 7'b0010011) ? 1'b1: // Wrong & irrevelant
                     ((opcode == 7'b1100111) ? 1'b1:
                     ((opcode == 7'b0100011) ? 1'b0:
                     1'bz))));
@@ -66,7 +66,7 @@ module controller(
                     1'bz))));
     assign MemtoReg = (opcode == 7'b0110011)? 1'b0:
                     ((opcode == 7'b0000011) ? 1'b1:
-                    ((opcode == 7'b0010011) ? 1'b1:
+                    ((opcode == 7'b0010011) ? 1'b0: // originall 1'b1 but testing
                     ((opcode == 7'b1100111) ? 1'b1:
                     ((opcode == 7'b0100011) ? 1'bx:
                     1'bz))));
