@@ -69,7 +69,7 @@ module datapath #(
         .b(adder_b), 
         .y(adder_out)
         );
-//    assign IM_addr = PC_out;
+    assign IM_addr = PC_out;
     instructionmemory IM(
         .ra(PC_out), 
         .rd(IM_out)
@@ -90,10 +90,10 @@ module datapath #(
         .rd1(read_data_1), 
         .rd2(read_data_2)
         );
-    always @(posedge clk) begin
-        $display("read data 1 is %b", read_data_1);
-        $display("read data 2 is %b", read_data_2);
-    end
+//    always @(posedge clk) begin
+//        $display("read data 1 is %b", read_data_1);
+//        $display("read data 2 is %b", read_data_2);
+//    end
     imm_Gen sign_extender(
         .inst_code(regwire), 
         .Imm_out(extender_out)
@@ -112,8 +112,10 @@ module datapath #(
         );
     datamemory dm(MemRead, MemWrite, ALUout[8:0], read_data_2, dm_out);
     mux2 dm_mux(
-        .d0(dm_out),
-        .d1(ALUout),
+//        .d0(dm_out),
+//        .d1(ALUout),
+        .d0(ALUout),
+        .d1(dm_out),
         .s(MemtoReg), 
         .y(dm_mux_out)
         );

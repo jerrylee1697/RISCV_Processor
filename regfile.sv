@@ -62,6 +62,8 @@ module regfile #(
     
     assign rd1 = reg_file[ra1];
     assign rd2 = reg_file[ra2];
+    
+    
 //    always @(posedge clk) begin
 //        $display("outside ra1 is %b", ra1);
 //        $display("outside ra2 is %b", ra2);

@@ -3,12 +3,6 @@ Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 362ef4467f4c4d46b491438db21805f4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RISC_V_behav xil_defaultlib.tb_RISC_V xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port ALU_CC [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:54]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port ra1 [D:/OneDrive/EECS 31L/FInal/datapath.sv:93]
-WARNING: [VRFC 10-278] actual bit length 64 differs from formal bit length 1 for port s [D:/OneDrive/EECS 31L/FInal/datapath.sv:99]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUOp [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:71]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUop [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:74]
-WARNING: [VRFC 10-1783] select index -2 into instruction is out of bounds [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:65]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

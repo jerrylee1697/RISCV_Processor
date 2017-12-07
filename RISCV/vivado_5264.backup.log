@@ -1,0 +1,1432 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Wed Dec  6 00:07:36 2017
+# Process ID: 5264
+# Current directory: D:/OneDrive/EECS 31L/FInal/RISCV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17536 D:\OneDrive\EECS 31L\FInal\RISCV\RISCV.xpr
+# Log file: D:/OneDrive/EECS 31L/FInal/RISCV/vivado.log
+# Journal file: D:/OneDrive/EECS 31L/FInal/RISCV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RISC_V' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xil_defaultlib -prj tb_RISC_V_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/ALUController.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUController
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC-V.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datamemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+WARNING: [VRFC 10-1315] redeclaration of ansi port mux_out is not allowed [D:/OneDrive/EECS 31L/FInal/datapath.sv:52]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/flopr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/imm_Gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_Gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/instructionmemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionmemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC_V_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RISC_V
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 362ef4467f4c4d46b491438db21805f4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RISC_V_behav xil_defaultlib.tb_RISC_V xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port ALU_CC [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:54]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port ra1 [D:/OneDrive/EECS 31L/FInal/datapath.sv:87]
+WARNING: [VRFC 10-278] actual bit length 64 differs from formal bit length 1 for port s [D:/OneDrive/EECS 31L/FInal/datapath.sv:93]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUOp [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:71]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUop [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:74]
+WARNING: [VRFC 10-1783] select index -2 into instruction is out of bounds [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.instructionmemory
+Compiling module xil_defaultlib.regfile_default
+Compiling module xil_defaultlib.imm_Gen
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datamemory
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.ALUController
+Compiling module xil_defaultlib.RISC_V
+Compiling module xil_defaultlib.tb_RISC_V
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RISC_V_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_RISC_V_behav -key {Behavioral:sim_1:Functional:tb_RISC_V} -tclbatch {tb_RISC_V.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source tb_RISC_V.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is 00000000000000000111000000110011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000001000010000110011
+Instruction is 00000000001000001000010000110011
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_RISC_V_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RISC_V' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xil_defaultlib -prj tb_RISC_V_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/ALUController.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUController
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC-V.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datamemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+WARNING: [VRFC 10-1315] redeclaration of ansi port mux_out is not allowed [D:/OneDrive/EECS 31L/FInal/datapath.sv:52]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/flopr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/imm_Gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_Gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/instructionmemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionmemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC_V_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RISC_V
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 362ef4467f4c4d46b491438db21805f4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RISC_V_behav xil_defaultlib.tb_RISC_V xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port ALU_CC [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:54]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port ra1 [D:/OneDrive/EECS 31L/FInal/datapath.sv:87]
+WARNING: [VRFC 10-278] actual bit length 64 differs from formal bit length 1 for port s [D:/OneDrive/EECS 31L/FInal/datapath.sv:93]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUOp [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:71]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUop [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:74]
+WARNING: [VRFC 10-1783] select index -2 into instruction is out of bounds [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.instructionmemory
+Compiling module xil_defaultlib.regfile_default
+Compiling module xil_defaultlib.imm_Gen
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datamemory
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.ALUController
+Compiling module xil_defaultlib.RISC_V
+Compiling module xil_defaultlib.tb_RISC_V
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RISC_V_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_RISC_V_behav -key {Behavioral:sim_1:Functional:tb_RISC_V} -tclbatch {tb_RISC_V.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source tb_RISC_V.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is 00000000000000000111000000110011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000001000010000110011
+Instruction is 00000000001000001000010000110011
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_RISC_V_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RISC_V' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xil_defaultlib -prj tb_RISC_V_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/ALUController.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUController
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC-V.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datamemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+WARNING: [VRFC 10-1315] redeclaration of ansi port mux_out is not allowed [D:/OneDrive/EECS 31L/FInal/datapath.sv:52]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/flopr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/imm_Gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_Gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/instructionmemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionmemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC_V_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RISC_V
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 362ef4467f4c4d46b491438db21805f4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RISC_V_behav xil_defaultlib.tb_RISC_V xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port ALU_CC [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:54]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port ra1 [D:/OneDrive/EECS 31L/FInal/datapath.sv:87]
+WARNING: [VRFC 10-278] actual bit length 64 differs from formal bit length 1 for port s [D:/OneDrive/EECS 31L/FInal/datapath.sv:93]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUOp [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:71]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUop [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:74]
+WARNING: [VRFC 10-1783] select index -2 into instruction is out of bounds [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.instructionmemory
+Compiling module xil_defaultlib.regfile_default
+Compiling module xil_defaultlib.imm_Gen
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datamemory
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.ALUController
+Compiling module xil_defaultlib.RISC_V
+Compiling module xil_defaultlib.tb_RISC_V
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RISC_V_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_RISC_V_behav -key {Behavioral:sim_1:Functional:tb_RISC_V} -tclbatch {tb_RISC_V.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source tb_RISC_V.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is 00000000000000000111000000110011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000001000010000110011
+Instruction is 00000000001000001000010000110011
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_RISC_V_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RISC_V' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xil_defaultlib -prj tb_RISC_V_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/ALUController.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUController
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC-V.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datamemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+WARNING: [VRFC 10-1315] redeclaration of ansi port mux_out is not allowed [D:/OneDrive/EECS 31L/FInal/datapath.sv:52]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/flopr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/imm_Gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_Gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/instructionmemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionmemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC_V_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RISC_V
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 362ef4467f4c4d46b491438db21805f4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RISC_V_behav xil_defaultlib.tb_RISC_V xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port ALU_CC [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:54]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port ra1 [D:/OneDrive/EECS 31L/FInal/datapath.sv:87]
+WARNING: [VRFC 10-278] actual bit length 64 differs from formal bit length 1 for port s [D:/OneDrive/EECS 31L/FInal/datapath.sv:93]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUOp [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:71]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUop [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:74]
+WARNING: [VRFC 10-1783] select index -2 into instruction is out of bounds [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.instructionmemory
+Compiling module xil_defaultlib.regfile_default
+Compiling module xil_defaultlib.imm_Gen
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datamemory
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.ALUController
+Compiling module xil_defaultlib.RISC_V
+Compiling module xil_defaultlib.tb_RISC_V
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RISC_V_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_RISC_V_behav -key {Behavioral:sim_1:Functional:tb_RISC_V} -tclbatch {tb_RISC_V.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source tb_RISC_V.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is 00000000000000000111000000110011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000001000010000110011
+Instruction is 00000000001000001000010000110011
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_RISC_V_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RISC_V' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xil_defaultlib -prj tb_RISC_V_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/ALUController.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUController
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC-V.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datamemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+WARNING: [VRFC 10-1315] redeclaration of ansi port mux_out is not allowed [D:/OneDrive/EECS 31L/FInal/datapath.sv:52]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/flopr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/imm_Gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_Gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/instructionmemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionmemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC_V_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RISC_V
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 362ef4467f4c4d46b491438db21805f4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RISC_V_behav xil_defaultlib.tb_RISC_V xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port ALU_CC [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:54]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port ra1 [D:/OneDrive/EECS 31L/FInal/datapath.sv:91]
+WARNING: [VRFC 10-278] actual bit length 64 differs from formal bit length 1 for port s [D:/OneDrive/EECS 31L/FInal/datapath.sv:97]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUOp [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:71]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUop [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:74]
+WARNING: [VRFC 10-1783] select index -2 into instruction is out of bounds [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.instructionmemory
+Compiling module xil_defaultlib.regfile_default
+Compiling module xil_defaultlib.imm_Gen
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datamemory
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.ALUController
+Compiling module xil_defaultlib.RISC_V
+Compiling module xil_defaultlib.tb_RISC_V
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RISC_V_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_RISC_V_behav -key {Behavioral:sim_1:Functional:tb_RISC_V} -tclbatch {tb_RISC_V.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source tb_RISC_V.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is 00000000000000000111000000110011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000001000010000110011
+Instruction is 00000000001000001000010000110011
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_RISC_V_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RISC_V' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xil_defaultlib -prj tb_RISC_V_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/ALUController.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUController
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC-V.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datamemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/flopr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/imm_Gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_Gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/instructionmemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionmemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC_V_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RISC_V
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 362ef4467f4c4d46b491438db21805f4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RISC_V_behav xil_defaultlib.tb_RISC_V xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port ALU_CC [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:54]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port ra1 [D:/OneDrive/EECS 31L/FInal/datapath.sv:91]
+WARNING: [VRFC 10-278] actual bit length 64 differs from formal bit length 1 for port s [D:/OneDrive/EECS 31L/FInal/datapath.sv:97]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUOp [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:71]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUop [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:74]
+WARNING: [VRFC 10-1783] select index -2 into instruction is out of bounds [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.instructionmemory
+Compiling module xil_defaultlib.regfile_default
+Compiling module xil_defaultlib.imm_Gen
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datamemory
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.ALUController
+Compiling module xil_defaultlib.RISC_V
+Compiling module xil_defaultlib.tb_RISC_V
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RISC_V_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_RISC_V_behav -key {Behavioral:sim_1:Functional:tb_RISC_V} -tclbatch {tb_RISC_V.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source tb_RISC_V.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is 00000000000000000111000000110011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000001000010000110011
+Instruction is 00000000001000001000010000110011
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_RISC_V_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RISC_V' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xil_defaultlib -prj tb_RISC_V_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/ALUController.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUController
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC-V.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datamemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/flopr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/imm_Gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_Gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/instructionmemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionmemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC_V_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RISC_V
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 362ef4467f4c4d46b491438db21805f4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RISC_V_behav xil_defaultlib.tb_RISC_V xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port ALU_CC [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:54]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port ra1 [D:/OneDrive/EECS 31L/FInal/datapath.sv:93]
+WARNING: [VRFC 10-278] actual bit length 64 differs from formal bit length 1 for port s [D:/OneDrive/EECS 31L/FInal/datapath.sv:99]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUOp [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:71]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUop [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:74]
+WARNING: [VRFC 10-1783] select index -2 into instruction is out of bounds [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.instructionmemory
+Compiling module xil_defaultlib.regfile_default
+Compiling module xil_defaultlib.imm_Gen
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datamemory
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.ALUController
+Compiling module xil_defaultlib.RISC_V
+Compiling module xil_defaultlib.tb_RISC_V
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RISC_V_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_RISC_V_behav -key {Behavioral:sim_1:Functional:tb_RISC_V} -tclbatch {tb_RISC_V.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source tb_RISC_V.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is 00000000000000000111000000110011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000001000010000110011
+Instruction is 00000000001000001000010000110011
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_RISC_V_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RISC_V' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xil_defaultlib -prj tb_RISC_V_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/ALUController.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUController
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC-V.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datamemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/flopr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/imm_Gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_Gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/instructionmemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionmemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC_V_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RISC_V
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 362ef4467f4c4d46b491438db21805f4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RISC_V_behav xil_defaultlib.tb_RISC_V xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port ALU_CC [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:54]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port ra1 [D:/OneDrive/EECS 31L/FInal/datapath.sv:93]
+WARNING: [VRFC 10-278] actual bit length 64 differs from formal bit length 1 for port s [D:/OneDrive/EECS 31L/FInal/datapath.sv:99]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUOp [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:71]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUop [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:74]
+WARNING: [VRFC 10-1783] select index -2 into instruction is out of bounds [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.instructionmemory
+Compiling module xil_defaultlib.regfile_default
+Compiling module xil_defaultlib.imm_Gen
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datamemory
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.ALUController
+Compiling module xil_defaultlib.RISC_V
+Compiling module xil_defaultlib.tb_RISC_V
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RISC_V_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_RISC_V_behav -key {Behavioral:sim_1:Functional:tb_RISC_V} -tclbatch {tb_RISC_V.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source tb_RISC_V.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is 00000000000000000111000000110011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000001000010000110011
+Instruction is 00000000001000001000010000110011
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_RISC_V_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RISC_V' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xil_defaultlib -prj tb_RISC_V_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/ALUController.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUController
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC-V.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datamemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/flopr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/imm_Gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_Gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/instructionmemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionmemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC_V_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RISC_V
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 362ef4467f4c4d46b491438db21805f4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RISC_V_behav xil_defaultlib.tb_RISC_V xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port ALU_CC [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:54]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port ra1 [D:/OneDrive/EECS 31L/FInal/datapath.sv:93]
+WARNING: [VRFC 10-278] actual bit length 64 differs from formal bit length 1 for port s [D:/OneDrive/EECS 31L/FInal/datapath.sv:99]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUOp [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:71]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUop [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:74]
+WARNING: [VRFC 10-1783] select index -2 into instruction is out of bounds [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.instructionmemory
+Compiling module xil_defaultlib.regfile_default
+Compiling module xil_defaultlib.imm_Gen
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datamemory
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.ALUController
+Compiling module xil_defaultlib.RISC_V
+Compiling module xil_defaultlib.tb_RISC_V
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RISC_V_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_RISC_V_behav -key {Behavioral:sim_1:Functional:tb_RISC_V} -tclbatch {tb_RISC_V.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source tb_RISC_V.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_RISC_V_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_RISC_V' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xil_defaultlib -prj tb_RISC_V_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/ALUController.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUController
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC-V.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datamemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/flopr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/imm_Gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_Gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/instructionmemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instructionmemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/regfile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/OneDrive/EECS 31L/FInal/RISC_V_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_RISC_V
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.3/bin/unwrapped/win64.o/xelab.exe -wto 362ef4467f4c4d46b491438db21805f4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_RISC_V_behav xil_defaultlib.tb_RISC_V xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port ALU_CC [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:54]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port ra1 [D:/OneDrive/EECS 31L/FInal/datapath.sv:93]
+WARNING: [VRFC 10-278] actual bit length 64 differs from formal bit length 1 for port s [D:/OneDrive/EECS 31L/FInal/datapath.sv:99]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUOp [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:71]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port ALUop [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:74]
+WARNING: [VRFC 10-1783] select index -2 into instruction is out of bounds [D:/OneDrive/EECS 31L/FInal/RISC-V.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.flopr
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.instructionmemory
+Compiling module xil_defaultlib.regfile_default
+Compiling module xil_defaultlib.imm_Gen
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datamemory
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.ALUController
+Compiling module xil_defaultlib.RISC_V
+Compiling module xil_defaultlib.tb_RISC_V
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_RISC_V_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/OneDrive/EECS 31L/FInal/RISCV/RISCV.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_RISC_V_behav -key {Behavioral:sim_1:Functional:tb_RISC_V} -tclbatch {tb_RISC_V.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+source tb_RISC_V.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is 00000000000000000111000000110011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000000100000000000010010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000000000000100010011
+Instruction is 00000000001000001000010000110011
+Instruction is 00000000001000001000010000110011
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Instruction is xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_RISC_V_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
