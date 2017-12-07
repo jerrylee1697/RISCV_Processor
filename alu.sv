@@ -30,24 +30,28 @@ module alu #(
     output logic [DATA_WIDTH-1:0] ALUResult
     );
     
-    logic [63:0] var_1 = SrcA * SrcB;
-    assign ALUResult = (ALUCC == 4'b0000)? (SrcA * SrcB):
-                       (ALUCC == 4'b0001)? (SrcA | SrcB):
-                       (ALUCC == 4'b0010)? (SrcA + SrcB):
-                       (ALUCC == 4'b0110)? (SrcA - SrcB):
-                       1'bz;
-//    always begin
-//        if(ALUCC == 4'b0000) begin
-//            ALUResult <= SrcA * SrcB;
-//        end
-//        else if (ALUCC == 4'b0001) begin
-//            ALUResult <= SrcA | SrcB;
-//        end
-//        else if (ALUCC == 4'b0010) begin
-//            ALUResult <= SrcA + SrcB;
-//        end
-//        else if (ALUCC == 4'b0110) begin
-//            ALUResult <= SrcA - SrcB;
-//        end
-//    end
+//    logic [63:0] var_1 = SrcA * SrcB;
+//    assign ALUResult = (ALUCC == 4'b0000)? (SrcA * SrcB):
+//                       (ALUCC == 4'b0001)? (SrcA | SrcB):
+//                       (ALUCC == 4'b0010)? (SrcA + SrcB):
+//                       (ALUCC == 4'b0110)? (SrcA - SrcB):
+//                       1'bz;
+    always @(SrcA or SrcB or ALUCC)begin
+        if(ALUCC == 4'b0000) begin
+            ALUResult <= SrcA * SrcB;
+        end
+        else if (ALUCC == 4'b0001) begin
+            ALUResult <= SrcA | SrcB;
+        end
+        else if (ALUCC == 4'b0010) begin
+            ALUResult <= SrcA + SrcB;
+        end
+        else if (ALUCC == 4'b0110) begin
+            ALUResult <= SrcA - SrcB;
+        end
+        $display("ALUCC is %b", ALUCC);
+        $display("SrcA is %b", SrcA);
+        $display("SrcB is %b", SrcB);
+        $display("result is %b", ALUResult);
+    end
 endmodule

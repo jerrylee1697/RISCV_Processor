@@ -35,26 +35,39 @@ module regfile #(
     
     integer i;
     
-    logic [REGISTER_SIZE-1:0] reg_file [DATA_WIDTH-1:0];
+    logic [DATA_WIDTH-1:0] reg_file [REGISTER_SIZE-1:0];
 
-    initial begin
-        for (i = 0; i< REGISTER_SIZE; i = i + 1) 
-            reg_file[i] <= 0;
-    end
+//    initial begin
+//        for (i = 0; i< REGISTER_SIZE; i = i + 1) 
+//            reg_file[i] <= 0;
+//    end
     
     always @(negedge clk) begin
         if (reset) begin
             for (i = 0; i< REGISTER_SIZE; i = i + 1) 
-                reg_file[i] <= 4;
+                reg_file[i] <= 0;
         end
         if (RegWrite) begin
             reg_file[wa] <= wd;
+//            $display("wd is %b", wd);
+//            $display("reg_file written in %b", reg_file[wa]);
         end
- 
+    
+//    $display("ra1 is %b", ra1);
+//    $display("ra2 is %b", ra2);
+//    $display("wa is %b", wa);
+//    $display("rd1 is %b", reg_file[ra1]);
+//    $display("rd2 is %b", reg_file[ra2]);
     end
-
     
     assign rd1 = reg_file[ra1];
     assign rd2 = reg_file[ra2];
+//    always @(posedge clk) begin
+//        $display("outside ra1 is %b", ra1);
+//        $display("outside ra2 is %b", ra2);
+//        $display("rd1 is %b", rd1);
+//        $display("rd2 is %b", rd2);
+//    end
+        
 
 endmodule

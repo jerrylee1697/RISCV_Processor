@@ -24,12 +24,6 @@ module tb_RISC_V ;
 // clock and reset signal declaration
     logic clk , reset ;
     logic [63:0] tb_ALU_Result ;
-    logic  [31:0] INS_out;
-    logic [63:0] mux_out;
-    logic [63:0] rd1_out;
-    logic [63:0] rd2_out;
-    logic [8:0] PC_out;
-    
 // clock generation
     always #10 clk = ~ clk ;
     
@@ -43,12 +37,7 @@ module tb_RISC_V ;
     RISC_V tb_RISC_V (
         .clk(clk),
         .reset(reset),
-        .ALU_Result(tb_ALU_Result),
-        .INS_out(INS_out),
-        .mux_out(mux_out),
-        .rd1_out(rd1_out),
-        .rd2_out(rd2_out),
-        .PC_out(PC_out)
+        .ALU_Result(tb_ALU_Result)
         );
         
     initial begin

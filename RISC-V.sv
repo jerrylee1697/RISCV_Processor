@@ -23,12 +23,7 @@
 module RISC_V #(
     parameter DATA_W = 64)
     ( input logic clk , reset , // clock and reset signals
-    output logic [DATA_W -1:0] ALU_Result, // The ALU_Result
-    output logic  [31:0] INS_out,
-    output logic [DATA_W-1:0] mux_out,
-    output logic [DATA_W-1:0] rd1_out,
-    output logic [DATA_W-1:0] rd2_out,
-    output logic [8:0] PC_out
+    output logic [DATA_W -1:0] ALU_Result // The ALU_Result
     );
    
     wire RegWrite; 
@@ -36,11 +31,11 @@ module RISC_V #(
     wire ALUSrc; 
     wire MemWrite;
     wire MemRead; 
-    wire ALU_CC;
+    wire [3:0]ALU_CC;
     wire [6:0]opcode; 
-    wire funct7;
-    wire funct3;
-    wire ALUOp; 
+    wire [6:0]funct7;
+    wire [2:0]funct3;
+    wire [1:0]ALUOp; 
     wire [31:0]instruction;
         
     datapath DP(
@@ -53,26 +48,29 @@ module RISC_V #(
         .MemRead(MemRead), 
         .ALU_CC(ALU_CC), 
         .ALUresult(ALU_Result), 
-        .instruction(instruction), 
-        .Mux_out(mux_out), 
-        .rd1_out(rd1_out), 
-        .rd2_out(rd2_out),
-        .PC_output(PC_out)
+        .instruction(instruction)
         );
     
     assign opcode = instruction [6:0];
     assign funct7 = instruction [31:25];
-    assign funct3 = instruction [12-14];
-    assign INS_out = instruction;
+    assign funct3 = instruction [14:12];
     
-    controller ctrl(opcode,
-        ALUSrc, MemtoReg,
-        RegWrite, MemRead, 
-        MemWrite, ALUOp
+    controller ctrl(
+        .opcode(opcode),
+        .ALUSrc(ALUSrc), 
+        .MemtoReg(MemtoReg),
+        .RegWrite(RegWrite), 
+        .MemRead(MemRead), 
+        .MemWrite(MemWrite), 
+        .ALUOp(ALUOp)
         );
         
-    ALUController ALUctrl(ALUOp, funct7, funct3, ALU_CC);
-    
-    
-    
+    ALUController ALUctrl(
+        .ALUop(ALUOp), 
+        .Funct7(funct7), 
+        .Funct3(funct3), 
+        .Operation(ALU_CC)
+        );
+        
+   
 endmodule
