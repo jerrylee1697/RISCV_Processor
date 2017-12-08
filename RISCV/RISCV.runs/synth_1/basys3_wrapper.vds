@@ -2,8 +2,8 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Thu Dec  7 14:42:40 2017
-# Process ID: 6928
+# Start of session at: Thu Dec  7 15:06:37 2017
+# Process ID: 22056
 # Current directory: D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/synth_1
 # Command line: vivado.exe -log basys3_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source basys3_wrapper.tcl
 # Log file: D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/synth_1/basys3_wrapper.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15768 
+INFO: Helper process launched with PID 22340 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 345.328 ; gain = 101.047
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 346.066 ; gain = 101.844
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'basys3_wrapper' [D:/OneDrive/EECS 31L/Final/basys3_wrapper.sv:23]
 INFO: [Synth 8-638] synthesizing module 'RISC_V' [D:/OneDrive/EECS 31L/Final/RISC-V.sv:23]
@@ -186,7 +186,7 @@ WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[7]
 WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[1]
 WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 409.336 ; gain = 165.055
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 409.109 ; gain = 164.887
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -196,7 +196,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 409.336 ; gain = 165.055
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 409.109 ; gain = 164.887
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -212,22 +212,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 762.352 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 762.113 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 762.418 ; gain = 518.137
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 762.113 ; gain = 517.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 762.418 ; gain = 518.137
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 762.113 ; gain = 517.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 762.418 ; gain = 518.137
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 762.113 ; gain = 517.891
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/OneDrive/EECS 31L/Final/alu.sv:46]
 INFO: [Synth 8-5546] ROM "Memory_reg[63]" won't be mapped to RAM because it is too sparse
@@ -364,7 +364,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[2]' [D:/OneDrive
 WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[1]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
 WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[0]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 762.418 ; gain = 518.137
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 762.113 ; gain = 517.891
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -573,107 +573,6 @@ DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP pro
 WARNING: [Synth 8-3917] design basys3_wrapper has port dp driven by constant 1
 WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[1]
 WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[0]
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[31][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[30][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[29][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[28][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[27][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[26][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[25][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[24][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[23][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[22][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[21][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[20][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[19][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[18][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[17][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[16][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[15][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[14][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[13][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[12][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[7][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[6][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[5][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[4][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[31][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[30][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[29][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[28][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[27][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[26][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[25][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[24][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[23][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[22][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[21][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[20][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[19][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[18][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[17][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[16][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[15][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[14][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[13][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[12][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[7][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[6][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[5][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[4][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[31][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[30][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[29][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[28][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[27][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[26][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[25][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[24][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[23][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[22][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[21][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[20][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[19][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[18][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[17][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[16][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[15][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[14][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[13][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[12][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[7][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[6][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[5][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[4][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[31][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[30][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[29][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[28][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[27][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[26][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[25][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[24][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[23][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[22][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[21][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[20][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[19][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[18][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[17][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[16][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[15][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[14][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[13][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[12][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[7][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[6][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[5][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[4][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[31][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[30][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[29][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\processor_31L/DP/rf /\reg_file_reg[28][3] )
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][63]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][62]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][61]) is unused and will be removed from module regfile.
@@ -721,23 +620,6 @@ WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][20]) is unused and 
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][19]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][18]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][17]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][16]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][15]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][14]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][13]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][12]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][11]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][10]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][9]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][8]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][7]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][6]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][5]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][4]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][3]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][2]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][1]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][0]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][63]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][62]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][61]) is unused and will be removed from module regfile.
@@ -774,9 +656,26 @@ WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][31]) is unused and 
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][30]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][29]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][28]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][27]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][26]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][25]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][24]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][23]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][22]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][21]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][20]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][19]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][18]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][17]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[29][63]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[29][62]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[29][61]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[29][60]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[29][59]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[29][58]) is unused and will be removed from module regfile.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 762.418 ; gain = 518.137
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 762.113 ; gain = 517.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -818,13 +717,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 783.551 ; gain = 539.270
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 792.559 ; gain = 548.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 794.441 ; gain = 550.160
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 804.273 ; gain = 560.051
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -835,24 +734,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][1]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][0]'
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][12]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][0]'
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][0]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][2]'
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][16]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][2]'
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][9]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][2]'
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][13]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][2]'
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][5]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][2]'
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][10]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][2]'
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][14]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][2]'
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][2]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][6]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][8]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][4]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][11]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][15]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][3]'
-INFO: [Synth 8-3886] merging instance 'processor_31L/DP/rf/reg_file_reg[3][3]' (FDRE_1) to 'processor_31L/DP/rf/reg_file_reg[3][7]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 812.387 ; gain = 568.105
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 830.043 ; gain = 585.820
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -876,7 +759,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 812.387 ; gain = 568.105
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 830.043 ; gain = 585.820
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -889,7 +772,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 812.387 ; gain = 568.105
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 830.043 ; gain = 585.820
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -901,25 +784,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 812.387 ; gain = 568.105
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 830.043 ; gain = 585.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 812.387 ; gain = 568.105
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 830.043 ; gain = 585.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 812.387 ; gain = 568.105
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 830.043 ; gain = 585.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 812.387 ; gain = 568.105
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 830.043 ; gain = 585.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -938,16 +821,16 @@ Report Cell Usage:
 |1     |BUFG    |     3|
 |2     |CARRY4  |    12|
 |3     |DSP48E1 |     1|
-|4     |LUT1    |     4|
-|5     |LUT2    |    43|
-|6     |LUT3    |    46|
-|7     |LUT4    |    33|
-|8     |LUT5    |    73|
-|9     |LUT6    |   417|
-|10    |MUXF7   |   136|
-|11    |MUXF8   |    68|
+|4     |LUT1    |     3|
+|5     |LUT2    |    44|
+|6     |LUT3    |    43|
+|7     |LUT4    |   176|
+|8     |LUT5    |    65|
+|9     |LUT6    |   643|
+|10    |MUXF7   |   205|
+|11    |MUXF8   |    83|
 |12    |FDCE    |     2|
-|13    |FDRE    |    92|
+|13    |FDRE    |   585|
 |14    |LD      |  1126|
 |15    |IBUF    |     2|
 |16    |OBUF    |    12|
@@ -957,26 +840,25 @@ Report Instance Areas:
 +------+----------------+------------------+------+
 |      |Instance        |Module            |Cells |
 +------+----------------+------------------+------+
-|1     |top             |                  |  2070|
-|2     |  processor_31L |RISC_V            |  2010|
-|3     |    ALUctrl     |ALUController     |     3|
-|4     |    DP          |datapath          |  2007|
-|5     |      dm        |datamemory        |  1598|
-|6     |      IM        |instructionmemory |     4|
-|7     |      ad        |adder             |     8|
-|8     |      dp_alu    |alu               |   173|
-|9     |      flipflop  |flopr             |   132|
-|10    |      rf        |regfile           |    85|
-|11    |  seg_display0  |seg_display       |     8|
+|1     |top             |                  |  3005|
+|2     |  processor_31L |RISC_V            |  2945|
+|3     |    DP          |datapath          |  2945|
+|4     |      IM        |instructionmemory |    18|
+|5     |      ad        |adder             |     8|
+|6     |      dm        |datamemory        |  1615|
+|7     |      dp_alu    |alu               |   152|
+|8     |      flipflop  |flopr             |   288|
+|9     |      rf        |regfile           |   857|
+|10    |  seg_display0  |seg_display       |     8|
 +------+----------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 812.387 ; gain = 568.105
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 830.043 ; gain = 585.820
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 5175 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 812.387 ; gain = 215.023
-Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 812.387 ; gain = 568.105
+Synthesis finished with 0 errors, 0 critical warnings and 4698 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 830.043 ; gain = 232.816
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 830.043 ; gain = 585.820
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1345 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1429 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -985,10 +867,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LD => LDCE: 1126 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-262 Infos, 289 Warnings, 0 Critical Warnings and 0 Errors encountered.
+145 Infos, 289 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 812.387 ; gain = 581.055
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 830.043 ; gain = 598.957
 INFO: [Common 17-1381] The checkpoint 'D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/synth_1/basys3_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file basys3_wrapper_utilization_synth.rpt -pb basys3_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 812.387 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 14:43:25 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 830.043 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 15:07:24 2017...

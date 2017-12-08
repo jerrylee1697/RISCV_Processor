@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date         : Thu Dec  7 14:44:03 2017
+| Date         : Thu Dec  7 15:07:57 2017
 | Host         : DESKTOP-RJ2BKFQ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -file basys3_wrapper_control_sets_placed.rpt
 | Design       : basys3_wrapper
@@ -21,7 +21,7 @@ Table of Contents
 +-------------------------------+-------+
 |             Status            | Count |
 +-------------------------------+-------+
-| Number of unique control sets |     6 |
+| Number of unique control sets |   101 |
 +-------------------------------+-------+
 
 
@@ -31,12 +31,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | No                     |            1126 |          421 |
 | No           | No                    | Yes                    |               2 |            1 |
-| No           | Yes                   | No                     |              41 |           10 |
+| No           | Yes                   | No                     |              41 |           11 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              51 |           34 |
+| Yes          | Yes                   | No                     |             544 |          174 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 

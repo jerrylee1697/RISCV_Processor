@@ -38,7 +38,7 @@ module alu #(
 //                       1'bz;
     always @(SrcA or SrcB or ALUCC)begin
         if(ALUCC == 4'b0000) begin
-            ALUResult <= SrcA * SrcB;
+            ALUResult <= SrcA & SrcB;
         end
         else if (ALUCC == 4'b0001) begin
             ALUResult <= SrcA | SrcB;
