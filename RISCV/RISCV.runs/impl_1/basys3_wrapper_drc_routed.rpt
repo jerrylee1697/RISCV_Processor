@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-| Date         : Thu Dec  7 15:08:15 2017
+| Date         : Thu Dec  7 17:47:44 2017
 | Host         : DESKTOP-RJ2BKFQ running 64-bit major release  (build 9200)
 | Command      : report_drc -file basys3_wrapper_drc_routed.rpt -pb basys3_wrapper_drc_routed.pb -rpx basys3_wrapper_drc_routed.rpx
 | Design       : basys3_wrapper
@@ -24,15 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 70
+             Violations found: 67
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| DPIP-1   | Warning  | Input pipelining                                    | 2          |
-| DPOP-1   | Warning  | PREG Output pipelining                              | 1          |
-| DPOP-2   | Warning  | MREG Output pipelining                              | 1          |
-| PDRC-153 | Warning  | Gated clock check                                   | 65         |
+| PDRC-153 | Warning  | Gated clock check                                   | 66         |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -50,349 +47,334 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
 Refer to the device configuration user guide for more information.
 Related violations: <none>
 
-DPIP-1#1 Warning
-Input pipelining  
-DSP processor_31L/DP/dp_alu/ALUResult0 input processor_31L/DP/dp_alu/ALUResult0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPIP-1#2 Warning
-Input pipelining  
-DSP processor_31L/DP/dp_alu/ALUResult0 input processor_31L/DP/dp_alu/ALUResult0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-Related violations: <none>
-
-DPOP-1#1 Warning
-PREG Output pipelining  
-DSP processor_31L/DP/dp_alu/ALUResult0 output processor_31L/DP/dp_alu/ALUResult0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-Related violations: <none>
-
-DPOP-2#1 Warning
-MREG Output pipelining  
-DSP processor_31L/DP/dp_alu/ALUResult0 multiplier stage processor_31L/DP/dp_alu/ALUResult0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-Related violations: <none>
-
 PDRC-153#1 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16][0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[63][16]_i_2/O, cell processor_31L/DP/dp_alu/Memory_reg[63][16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/E[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[63][15]_i_2/O, cell processor_31L/DP/dp_alu/Memory_reg[63][15]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_0[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[62][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[62][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15][0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[0][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[0][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_10[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[50][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[50][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_0[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[32][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[32][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#4 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_11[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[49][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[49][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_10[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[52][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[52][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#5 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_12[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[48][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[48][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_11[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[12][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[12][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#6 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_13[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[47][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[47][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_12[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[44][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[44][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#7 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_14[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[46][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[46][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_13[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[28][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[28][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#8 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_15[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[45][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[45][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_14[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[60][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[60][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#9 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_16[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[44][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[44][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_15[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[2][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[2][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#10 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_17[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[43][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[43][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_16[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[34][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[34][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#11 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_18[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[42][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[42][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_17[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[18][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[18][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#12 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_19[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[41][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[41][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_18[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[50][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[50][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#13 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_1[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[60][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[60][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_19[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[10][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[10][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#14 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_20[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[40][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[40][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_1[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[16][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[16][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#15 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_21[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[39][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[39][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_20[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[42][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[42][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#16 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_22[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[38][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[38][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_21[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[26][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[26][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#17 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_23[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[37][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[37][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_22[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[58][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[58][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#18 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_24[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[36][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[36][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_23[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[6][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[6][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#19 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_25[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[35][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[35][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_24[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[38][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[38][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#20 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_26[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[34][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[34][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_25[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[22][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[22][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#21 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_27[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[33][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[33][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_26[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[54][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[54][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#22 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_28[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[32][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[32][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_27[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[14][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[14][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#23 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_29[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[31][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[31][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_28[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[46][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[46][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#24 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_2[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[59][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[59][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_29[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[30][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[30][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#25 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_30[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[30][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[30][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_2[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[48][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[48][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#26 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_31[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[29][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[29][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_30[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[62][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[62][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#27 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_32[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[28][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[28][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_31[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[1][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[1][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#28 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_33[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[27][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[27][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_32[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[33][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[33][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#29 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_34[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[26][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[26][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_33[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[17][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[17][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#30 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_35[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[25][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[25][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_34[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[49][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[49][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#31 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_36[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[24][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[24][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_35[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[9][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[9][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#32 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_37[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[23][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[23][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_36[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[41][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[41][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#33 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_38[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[22][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[22][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_37[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[25][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[25][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#34 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_39[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[21][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[21][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_38[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[57][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[57][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#35 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_3[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[58][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[58][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_39[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[5][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[5][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#36 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_40[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[20][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[20][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_3[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[8][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[8][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#37 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_41[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[19][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[19][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_40[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[37][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[37][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#38 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_42[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[18][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[18][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_41[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[21][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[21][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#39 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_43[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[17][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[17][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_42[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[53][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[53][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#40 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_44[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[16][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[16][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_43[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[13][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[13][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#41 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_45[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[15][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[15][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_44[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[45][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[45][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#42 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_46[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[14][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[14][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_45[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[29][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[29][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#43 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_47[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[13][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[13][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_46[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[61][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[61][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#44 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_48[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[12][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[12][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_47[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[3][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[3][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#45 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_49[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[11][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[11][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_48[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[35][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[35][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#46 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_4[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[57][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[57][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_49[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[19][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[19][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#47 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_50[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[10][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[10][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_4[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[40][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[40][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#48 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_51[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[9][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[9][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_50[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[51][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[51][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#49 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_52[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[8][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[8][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_51[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[11][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[11][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#50 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_53[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[7][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[7][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_52[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[43][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[43][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#51 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_54[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[6][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[6][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_53[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[27][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[27][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#52 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_55[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[5][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[5][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_54[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[59][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[59][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#53 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_56[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[4][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[4][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_55[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[7][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[7][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#54 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_57[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[3][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[3][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_56[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[39][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[39][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#55 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_58[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[2][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[2][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_57[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[23][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[23][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#56 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_59[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[1][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[1][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_58[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[55][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[55][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#57 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_5[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[56][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[56][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_59[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[15][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[15][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#58 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_6[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[54][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[54][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_5[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[24][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[24][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#59 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_7[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[53][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[53][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_60[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[47][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[47][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#60 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_8[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[52][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[52][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_61[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[31][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[31][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#61 Warning
 Gated clock check  
-Net processor_31L/DP/dp_alu/reg_file_reg[28][16]_9[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[51][16]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[51][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_6[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[56][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[56][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#62 Warning
 Gated clock check  
-Net processor_31L/DP/flipflop/reg_file_reg[15][16]_1 is a gated clock net sourced by a combinational pin processor_31L/DP/flipflop/ALUResult_reg[16]_i_2/O, cell processor_31L/DP/flipflop/ALUResult_reg[16]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_7[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[4][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[4][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#63 Warning
 Gated clock check  
-Net processor_31L/DP/flipflop/reg_file_reg[28][16]_0[0] is a gated clock net sourced by a combinational pin processor_31L/DP/flipflop/Memory_reg[61][16]_i_1/O, cell processor_31L/DP/flipflop/Memory_reg[61][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_8[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[36][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[36][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#64 Warning
 Gated clock check  
-Net processor_31L/DP/flipflop/reg_file_reg[28][16]_1[0] is a gated clock net sourced by a combinational pin processor_31L/DP/flipflop/Memory_reg[55][16]_i_1/O, cell processor_31L/DP/flipflop/Memory_reg[55][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/dp_alu/reg_file_reg[28][15]_9[0] is a gated clock net sourced by a combinational pin processor_31L/DP/dp_alu/Memory_reg[20][15]_i_1/O, cell processor_31L/DP/dp_alu/Memory_reg[20][15]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#65 Warning
 Gated clock check  
-Net processor_31L/DP/flipflop/reg_file_reg[28][16]_2[0] is a gated clock net sourced by a combinational pin processor_31L/DP/flipflop/Memory_reg[0][16]_i_1/O, cell processor_31L/DP/flipflop/Memory_reg[0][16]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net processor_31L/DP/flipflop/MemRead is a gated clock net sourced by a combinational pin processor_31L/DP/flipflop/rd_reg[15]_i_2/O, cell processor_31L/DP/flipflop/rd_reg[15]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#66 Warning
+Gated clock check  
+Net processor_31L/DP/flipflop/reg_file_reg[0][15]_2 is a gated clock net sourced by a combinational pin processor_31L/DP/flipflop/ALUResult_reg[15]_i_2/O, cell processor_31L/DP/flipflop/ALUResult_reg[15]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

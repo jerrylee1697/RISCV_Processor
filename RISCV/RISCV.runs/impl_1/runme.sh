@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log basys3_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source basys3_wrapper.tcl -notrace
 
 

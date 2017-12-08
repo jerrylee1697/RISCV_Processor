@@ -2,8 +2,8 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Thu Dec  7 15:06:37 2017
-# Process ID: 22056
+# Start of session at: Thu Dec  7 17:46:02 2017
+# Process ID: 11332
 # Current directory: D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/synth_1
 # Command line: vivado.exe -log basys3_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source basys3_wrapper.tcl
 # Log file: D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/synth_1/basys3_wrapper.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 22340 
+INFO: Helper process launched with PID 10668 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 346.066 ; gain = 101.844
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 345.234 ; gain = 100.914
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'basys3_wrapper' [D:/OneDrive/EECS 31L/Final/basys3_wrapper.sv:23]
 INFO: [Synth 8-638] synthesizing module 'RISC_V' [D:/OneDrive/EECS 31L/Final/RISC-V.sv:23]
@@ -186,7 +186,7 @@ WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[7]
 WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[1]
 WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 409.109 ; gain = 164.887
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 409.367 ; gain = 165.047
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -196,7 +196,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 409.109 ; gain = 164.887
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 409.367 ; gain = 165.047
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -212,22 +212,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 762.113 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 764.184 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 762.113 ; gain = 517.891
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 764.250 ; gain = 519.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 762.113 ; gain = 517.891
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 764.250 ; gain = 519.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 762.113 ; gain = 517.891
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 764.250 ; gain = 519.930
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/OneDrive/EECS 31L/Final/alu.sv:46]
 INFO: [Synth 8-5546] ROM "Memory_reg[63]" won't be mapped to RAM because it is too sparse
@@ -364,7 +364,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[2]' [D:/OneDrive
 WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[1]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
 WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[0]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 762.113 ; gain = 517.891
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 764.250 ; gain = 519.930
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -383,8 +383,6 @@ Detailed RTL Component Info :
 +---Registers : 
 	                9 Bit    Registers := 2     
 	                2 Bit    Registers := 1     
-+---Multipliers : 
-	                64x64  Multipliers := 1     
 +---Muxes : 
 	   2 Input     64 Bit        Muxes := 69    
 	   3 Input     52 Bit        Muxes := 1     
@@ -435,8 +433,6 @@ Module alu
 Detailed RTL Component Info : 
 +---Adders : 
 	   3 Input     64 Bit       Adders := 1     
-+---Multipliers : 
-	                64x64  Multipliers := 1     
 +---Muxes : 
 	   2 Input     64 Bit        Muxes := 3     
 	   2 Input      1 Bit        Muxes := 2     
@@ -520,56 +516,7 @@ INFO: [Synth 8-5546] ROM "Memory_reg[32]" won't be mapped to RAM because it is t
 INFO: [Synth 8-5546] ROM "Memory_reg[31]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Memory_reg[30]" won't be mapped to RAM because it is too sparse
 INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [D:/OneDrive/EECS 31L/Final/alu.sv:41]
 WARNING: [Synth 8-6014] Unused sequential element clk_divide_reg was removed.  [D:/OneDrive/EECS 31L/Final/basys3_wrapper.sv:38]
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: PCIN+A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: PCIN+A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: PCIN+A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: PCIN+A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: PCIN+A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: PCIN+A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: Generating DSP processor_31L/DP/dp_alu/ALUResult0, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
-DSP Report: operator processor_31L/DP/dp_alu/ALUResult0 is absorbed into DSP processor_31L/DP/dp_alu/ALUResult0.
 WARNING: [Synth 8-3917] design basys3_wrapper has port dp driven by constant 1
 WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[1]
 WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[0]
@@ -620,6 +567,7 @@ WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][20]) is unused and 
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][19]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][18]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][17]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][16]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][63]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][62]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][61]) is unused and will be removed from module regfile.
@@ -667,45 +615,14 @@ WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][20]) is unused and 
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][19]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][18]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][17]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (reg_file_reg[30][16]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[29][63]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[29][62]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[29][61]) is unused and will be removed from module regfile.
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[29][60]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[29][59]) is unused and will be removed from module regfile.
-WARNING: [Synth 8-3332] Sequential element (reg_file_reg[29][58]) is unused and will be removed from module regfile.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 762.113 ; gain = 517.891
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-DSP: Preliminary Mapping  Report (see note below)
-+---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name    | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|basys3_wrapper | A*B            | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|basys3_wrapper | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|basys3_wrapper | PCIN+A*B       | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|basys3_wrapper | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|basys3_wrapper | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|basys3_wrapper | PCIN+A*B       | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|basys3_wrapper | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|basys3_wrapper | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|basys3_wrapper | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|basys3_wrapper | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|basys3_wrapper | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|basys3_wrapper | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|basys3_wrapper | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|basys3_wrapper | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|basys3_wrapper | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|basys3_wrapper | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-+---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-
-Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 764.250 ; gain = 519.930
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -717,13 +634,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 792.559 ; gain = 548.336
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 764.250 ; gain = 519.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 804.273 ; gain = 560.051
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 764.250 ; gain = 519.930
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -735,7 +652,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 830.043 ; gain = 585.820
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 785.695 ; gain = 541.375
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -759,7 +676,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 830.043 ; gain = 585.820
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 785.695 ; gain = 541.375
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -772,7 +689,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 830.043 ; gain = 585.820
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 785.695 ; gain = 541.375
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -784,25 +701,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 830.043 ; gain = 585.820
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 785.695 ; gain = 541.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 830.043 ; gain = 585.820
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 785.695 ; gain = 541.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 830.043 ; gain = 585.820
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 785.695 ; gain = 541.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 830.043 ; gain = 585.820
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 785.695 ; gain = 541.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -815,62 +732,61 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+--------+------+
-|      |Cell    |Count |
-+------+--------+------+
-|1     |BUFG    |     3|
-|2     |CARRY4  |    12|
-|3     |DSP48E1 |     1|
-|4     |LUT1    |     3|
-|5     |LUT2    |    44|
-|6     |LUT3    |    43|
-|7     |LUT4    |   176|
-|8     |LUT5    |    65|
-|9     |LUT6    |   643|
-|10    |MUXF7   |   205|
-|11    |MUXF8   |    83|
-|12    |FDCE    |     2|
-|13    |FDRE    |   585|
-|14    |LD      |  1126|
-|15    |IBUF    |     2|
-|16    |OBUF    |    12|
-+------+--------+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    11|
+|3     |LUT1   |     3|
+|4     |LUT2   |    15|
+|5     |LUT3   |    40|
+|6     |LUT4   |   145|
+|7     |LUT5   |    48|
+|8     |LUT6   |   625|
+|9     |MUXF7  |   193|
+|10    |MUXF8  |    72|
+|11    |FDCE   |     2|
+|12    |FDRE   |   553|
+|13    |LD     |  1063|
+|14    |IBUF   |     2|
+|15    |OBUF   |    12|
++------+-------+------+
 
 Report Instance Areas: 
 +------+----------------+------------------+------+
 |      |Instance        |Module            |Cells |
 +------+----------------+------------------+------+
-|1     |top             |                  |  3005|
-|2     |  processor_31L |RISC_V            |  2945|
-|3     |    DP          |datapath          |  2945|
-|4     |      IM        |instructionmemory |    18|
+|1     |top             |                  |  2786|
+|2     |  processor_31L |RISC_V            |  2727|
+|3     |    DP          |datapath          |  2727|
+|4     |      IM        |instructionmemory |    16|
 |5     |      ad        |adder             |     8|
-|6     |      dm        |datamemory        |  1615|
-|7     |      dp_alu    |alu               |   152|
+|6     |      dm        |datamemory        |  1520|
+|7     |      dp_alu    |alu               |   106|
 |8     |      flipflop  |flopr             |   288|
-|9     |      rf        |regfile           |   857|
+|9     |      rf        |regfile           |   782|
 |10    |  seg_display0  |seg_display       |     8|
 +------+----------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 830.043 ; gain = 585.820
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 785.695 ; gain = 541.375
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 4698 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 830.043 ; gain = 232.816
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 830.043 ; gain = 585.820
+Synthesis finished with 0 errors, 0 critical warnings and 4796 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 785.695 ; gain = 186.492
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 785.695 ; gain = 541.375
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1429 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1341 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1126 instances were transformed.
-  LD => LDCE: 1126 instances
+  A total of 1063 instances were transformed.
+  LD => LDCE: 1063 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-145 Infos, 289 Warnings, 0 Critical Warnings and 0 Errors encountered.
+144 Infos, 289 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 830.043 ; gain = 598.957
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 785.695 ; gain = 554.461
 INFO: [Common 17-1381] The checkpoint 'D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/synth_1/basys3_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file basys3_wrapper_utilization_synth.rpt -pb basys3_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 830.043 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 15:07:24 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 785.695 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 17:46:44 2017...
