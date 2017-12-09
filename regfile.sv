@@ -58,6 +58,8 @@ module regfile #(
 //    $display("wa is %b", wa);
 //    $display("rd1 is %b", reg_file[ra1]);
 //    $display("rd2 is %b", reg_file[ra2]);
+//        assign rd1 = reg_file[ra1];
+//        assign rd2 = reg_file[ra2];
     end
     
     assign rd1 = reg_file[ra1];

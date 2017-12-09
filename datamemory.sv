@@ -38,6 +38,7 @@ always @(MemRead or MemWrite or a or wd) begin
         rd = Memory[a>>3];
     end
     else if (MemWrite == 1) begin
+        #1
         Memory[a>>3] <= wd;
     end
    
