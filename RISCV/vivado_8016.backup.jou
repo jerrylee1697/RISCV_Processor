@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Fri Dec  8 18:34:35 2017
+# Process ID: 8016
+# Current directory: D:/OneDrive/EECS 31L/Final/RISCV
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5580 D:\OneDrive\EECS 31L\Final\RISCV\RISCV.xpr
+# Log file: D:/OneDrive/EECS 31L/Final/RISCV/vivado.log
+# Journal file: D:/OneDrive/EECS 31L/Final/RISCV\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/OneDrive/EECS 31L/Final/RISCV/RISCV.xpr}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top basys3_wrapper [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_RISC_V [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source tb_RISC_V.tcl
+add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
+add_wave {{/tb_RISC_V/tb_RISC_V/DP/dm}} 
+relaunch_sim
+close_sim

@@ -2,10 +2,10 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Thu Dec  7 14:35:19 2017
-# Process ID: 25392
+# Start of session at: Sat Dec  9 00:05:18 2017
+# Process ID: 2960
 # Current directory: D:/OneDrive/EECS 31L/Final/RISCV
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9356 D:\OneDrive\EECS 31L\Final\RISCV\RISCV.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11864 D:\OneDrive\EECS 31L\Final\RISCV\RISCV.xpr
 # Log file: D:/OneDrive/EECS 31L/Final/RISCV/vivado.log
 # Journal file: D:/OneDrive/EECS 31L/Final/RISCV\vivado.jou
 #-----------------------------------------------------------
@@ -14,111 +14,6 @@ open_project {D:/OneDrive/EECS 31L/Final/RISCV/RISCV.xpr}
 update_compile_order -fileset sources_1
 launch_simulation
 source tb_RISC_V.tcl
-add_files -norecurse {{D:/OneDrive/EECS 31L/Final/basys3_wrapper.sv} {D:/OneDrive/EECS 31L/Final/seg_display.sv}}
-update_compile_order -fileset sources_1
-file mkdir D:/OneDrive/EECS 31L/Final/RISCV/RISCV.srcs/constrs_1
-add_files -fileset constrs_1 -norecurse {{D:/OneDrive/EECS 31L/Final/const1.xdc}}
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top basys3_wrapper [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/impl_1/basys3_wrapper.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/impl_1/basys3_wrapper.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/impl_1/basys3_wrapper.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw
-close_sim
-launch_simulation
-source tb_RISC_V.tcl
-add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
-relaunch_sim
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/impl_1/basys3_wrapper.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/impl_1/basys3_wrapper.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_sim
-launch_simulation
-source tb_RISC_V.tcl
 add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
 add_wave {{/tb_RISC_V/tb_RISC_V/DP/rf}} 
 relaunch_sim
-close_sim
-launch_simulation
-source tb_RISC_V.tcl
-add_wave {{/tb_RISC_V/tb_RISC_V/DP/dm}} 
-relaunch_sim
-add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
-relaunch_sim
-add_wave {{/tb_RISC_V/tb_RISC_V/DP/rf}} 
-relaunch_sim
-add_wave {{/tb_RISC_V/tb_RISC_V/DP/dm}} 
-relaunch_sim
-close_sim
-launch_simulation
-source tb_RISC_V.tcl
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
-relaunch_sim
-close_sim
-launch_simulation
-source tb_RISC_V.tcl
-add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
-relaunch_sim
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/impl_1/basys3_wrapper.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/impl_1/basys3_wrapper.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/impl_1/basys3_wrapper.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_sim
-launch_simulation
-source tb_RISC_V.tcl
-add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
-add_wave {{/tb_RISC_V/tb_RISC_V/DP/dm}} 
-relaunch_sim
-close_sim

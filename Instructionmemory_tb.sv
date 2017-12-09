@@ -37,8 +37,8 @@ module Instructionmemory_tb;
         ra <= ra + 4'b0100;
     end
     instructionmemory Instructionmemory_tb(
-        .clk(clk),
-        .reset(reset),
+//        .clk(clk),
+//        .reset(reset),
         .ra(ra),
         .rd(instruction_result)
     );
