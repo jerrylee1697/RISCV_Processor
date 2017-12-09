@@ -11,7 +11,7 @@ D:/OneDrive/EECS 31L/Final/RISC_V_tb.sv,1512613279,systemVerilog,,,,tb_RISC_V,,x
 D:/OneDrive/EECS 31L/Final/adder.sv,1512613279,systemVerilog,,D:/OneDrive/EECS 31L/Final/alu.sv,,adder,,xil_defaultlib,C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include,,,,,
 D:/OneDrive/EECS 31L/Final/alu.sv,1512688605,systemVerilog,,D:/OneDrive/EECS 31L/Final/controller.sv,,alu,,xil_defaultlib,C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include,,,,,
 D:/OneDrive/EECS 31L/Final/controller.sv,1512640995,systemVerilog,,D:/OneDrive/EECS 31L/Final/datamemory.sv,,controller,,xil_defaultlib,C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include,,,,,
-D:/OneDrive/EECS 31L/Final/datamemory.sv,1512821478,systemVerilog,,D:/OneDrive/EECS 31L/Final/datapath.sv,,datamemory,,xil_defaultlib,C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include,,,,,
+D:/OneDrive/EECS 31L/Final/datamemory.sv,1512856050,systemVerilog,,D:/OneDrive/EECS 31L/Final/datapath.sv,,datamemory,,xil_defaultlib,C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include,,,,,
 D:/OneDrive/EECS 31L/Final/datapath.sv,1512639850,systemVerilog,,D:/OneDrive/EECS 31L/Final/flopr.sv,,datapath,,xil_defaultlib,C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include,,,,,
 D:/OneDrive/EECS 31L/Final/flopr.sv,1512613279,systemVerilog,,D:/OneDrive/EECS 31L/Final/imm_Gen.sv,,flopr,,xil_defaultlib,C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include,,,,,
 D:/OneDrive/EECS 31L/Final/imm_Gen.sv,1512821299,systemVerilog,,D:/OneDrive/EECS 31L/Final/instructionmemory.sv,,imm_Gen,,xil_defaultlib,C:/Xilinx/Vivado/2017.3/data/xilinx_vip/include,,,,,

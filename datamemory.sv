@@ -31,14 +31,14 @@ module datamemory #(
     output logic [ DATA_W -1:0] rd // Read Data
 );
 // Your Code . **/
-logic [DATA_W - 1:0] Memory [2**DM_ADDRESS - 1:0];
+logic [DATA_W - 1:0] Memory [DATA_W - 1:0];
 
 always @(MemRead or MemWrite or a or wd) begin
     if (MemRead == 1) begin
-        rd = Memory[a];
+        rd = Memory[a>>3];
     end
     else if (MemWrite == 1) begin
-        Memory[a] <= wd;
+        Memory[a>>3] <= wd;
     end
    
 end
