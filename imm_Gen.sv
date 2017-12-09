@@ -33,7 +33,7 @@ module imm_Gen(
     assign Imm_out[63:12] = (inst_code[6:0] == 7'b0000011) ? {52{Imm_out[11]}}:
                             ((inst_code[6:0] == 7'b0010011) ? {52{Imm_out[11]}}:
                             ((inst_code[6:0] == 7'b1100111) ? {52{Imm_out[11]}}:
-                            ((inst_code[6:0] == 7'b0100011) ? {57{Imm_out[11]}}:
+                            ((inst_code[6:0] == 7'b0100011) ? {52{Imm_out[11]}}:
                             1'bz)));
     
 //    always begin

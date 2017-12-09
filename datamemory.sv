@@ -31,7 +31,7 @@ module datamemory #(
     output logic [ DATA_W -1:0] rd // Read Data
 );
 // Your Code . **/
-logic [DATA_W - 1:0] Memory [DATA_W - 1:0];
+logic [DATA_W - 1:0] Memory [2**DM_ADDRESS - 1:0];
 
 always @(MemRead or MemWrite or a or wd) begin
     if (MemRead == 1) begin
