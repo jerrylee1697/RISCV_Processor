@@ -116,3 +116,19 @@ source tb_RISC_V.tcl
 add_wave {{/tb_RISC_V/tb_RISC_V/DP/rf}} 
 add_wave {{/tb_RISC_V/tb_RISC_V/DP/dm}} 
 relaunch_sim
+close_sim
+launch_simulation
+source tb_RISC_V.tcl
+add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
+add_wave {{/tb_RISC_V/tb_RISC_V/DP/rf}} 
+add_wave {{/tb_RISC_V/tb_RISC_V/DP/dm}} 
+relaunch_sim
+close_sim
+launch_simulation
+source tb_RISC_V.tcl
+add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
+add_wave {{/tb_RISC_V/tb_RISC_V/DP/dm}} 
+add_wave {{/tb_RISC_V/tb_RISC_V/DP/rf}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim

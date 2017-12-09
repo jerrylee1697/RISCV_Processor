@@ -33,15 +33,18 @@ module datamemory #(
 // Your Code . **/
 logic [DATA_W - 1:0] Memory [DATA_W - 1:0];
 
-always @(MemRead or MemWrite or a or wd) begin
+always @(MemRead or a or wd) begin
     if (MemRead == 1) begin
-        rd = Memory[a>>3];
+        rd <= Memory[a>>3];
     end
-    else if (MemWrite == 1) begin
-        #1
+end
+
+always @(MemWrite or a or wd) begin
+    if (MemWrite == 1) begin
+        #1 
         Memory[a>>3] <= wd;
     end
-   
+
 end
 
 endmodule
