@@ -132,3 +132,11 @@ add_wave {{/tb_RISC_V/tb_RISC_V/DP/rf}}
 relaunch_sim
 relaunch_sim
 relaunch_sim
+add_wave {{/tb_RISC_V/tb_RISC_V/DP/dm}} 
+close_sim
+launch_simulation
+source tb_RISC_V.tcl
+add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
