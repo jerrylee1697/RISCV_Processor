@@ -50,10 +50,15 @@ module datapath #(
     wire [63:0] dm_out;
     wire [63:0] dm_mux_out;
     assign adder_b = 4'b0100;
-    always @(posedge clk) begin
+    
+//    always @(posedge reset) begin
+//        init <= 9'b000000000;
+//    end
+    
+    always @(posedge clk or negedge reset) begin
         if (reset == 1) begin
             init = 9'b000000000;
-        end
+        end 
         else begin
             init <= PC_out;
         end

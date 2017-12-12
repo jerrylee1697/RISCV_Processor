@@ -28,7 +28,11 @@ module flopr #(
     output logic [WIDTH-1:0] q  
     );
     
-    always @(posedge clk) begin
+//    always @(posedge reset) begin
+//        q <= 1'b0;
+//    end
+    
+    always @(posedge clk or negedge reset) begin
         if (reset == 1) begin
             q <= 1'b0;
         end

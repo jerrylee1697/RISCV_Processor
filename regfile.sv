@@ -42,24 +42,14 @@ module regfile #(
 //            reg_file[i] <= 0;
 //    end
     
-    always @(negedge clk) begin
+    always @(posedge reset or negedge clk) begin
         if (reset) begin
             for (i = 0; i< REGISTER_SIZE; i = i + 1) 
                 reg_file[i] <= 0;
         end
-        if (RegWrite) begin
+        else if (RegWrite) begin
             reg_file[wa] <= wd;
-//            $display("wd is %b", wd);
-//            $display("reg_file written in %b", reg_file[wa]);
         end
-    
-//    $display("ra1 is %b", ra1);
-//    $display("ra2 is %b", ra2);
-//    $display("wa is %b", wa);
-//    $display("rd1 is %b", reg_file[ra1]);
-//    $display("rd2 is %b", reg_file[ra2]);
-//        assign rd1 = reg_file[ra1];
-//        assign rd2 = reg_file[ra2];
     end
     
     assign rd1 = reg_file[ra1];

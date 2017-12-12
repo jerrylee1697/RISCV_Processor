@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 23492 
+INFO: Helper process launched with PID 22856 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 345.922 ; gain = 101.469
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 346.133 ; gain = 101.941
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'basys3_wrapper' [D:/OneDrive/EECS 31L/Final/basys3_wrapper.sv:23]
 INFO: [Synth 8-638] synthesizing module 'RISC_V' [D:/OneDrive/EECS 31L/Final/RISC-V.sv:23]
@@ -158,6 +158,7 @@ INFO: [Synth 8-638] synthesizing module 'datamemory' [D:/OneDrive/EECS 31L/Final
 	Parameter DATA_W bound to: 64 - type: integer 
 WARNING: [Synth 8-567] referenced signal 'Memory' should be on the sensitivity list [D:/OneDrive/EECS 31L/Final/datamemory.sv:36]
 INFO: [Synth 8-256] done synthesizing module 'datamemory' (8#1) [D:/OneDrive/EECS 31L/Final/datamemory.sv:23]
+WARNING: [Synth 8-5788] Register init_reg in module datapath is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/OneDrive/EECS 31L/Final/datapath.sv:60]
 INFO: [Synth 8-256] done synthesizing module 'datapath' (9#1) [D:/OneDrive/EECS 31L/Final/datapath.sv:22]
 INFO: [Synth 8-638] synthesizing module 'controller' [D:/OneDrive/EECS 31L/Final/controller.sv:23]
 INFO: [Synth 8-256] done synthesizing module 'controller' (10#1) [D:/OneDrive/EECS 31L/Final/controller.sv:23]
@@ -177,15 +178,10 @@ WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[15]
 WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[14]
 WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[13]
 WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[12]
-WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[11]
-WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[10]
-WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[9]
-WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[8]
-WARNING: [Synth 8-3331] design imm_Gen has unconnected port inst_code[7]
 WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[1]
 WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 409.250 ; gain = 164.797
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 398.879 ; gain = 154.688
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -195,7 +191,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 409.250 ; gain = 164.797
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 398.879 ; gain = 154.688
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -211,23 +207,55 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 763.555 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 749.438 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 763.621 ; gain = 519.168
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 749.504 ; gain = 505.313
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 763.621 ; gain = 519.168
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 749.504 ; gain = 505.313
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 763.621 ; gain = 519.168
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 749.504 ; gain = 505.313
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "reg_file_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_file_reg[0]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/OneDrive/EECS 31L/Final/alu.sv:46]
 INFO: [Synth 8-5546] ROM "Memory_reg[63]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Memory_reg[62]" won't be mapped to RAM because it is too sparse
@@ -293,77 +321,78 @@ INFO: [Synth 8-5546] ROM "Memory_reg[3]" won't be mapped to RAM because it is to
 INFO: [Synth 8-5546] ROM "Memory_reg[2]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Memory_reg[1]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Memory_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "init" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "ALUSrc0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ALUOp0" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6014] Unused sequential element clk_divide_reg was removed.  [D:/OneDrive/EECS 31L/Final/basys3_wrapper.sv:38]
 WARNING: [Synth 8-327] inferring latch for variable 'ALUResult_reg' [D:/OneDrive/EECS 31L/Final/alu.sv:41]
 WARNING: [Synth 8-327] inferring latch for variable 'rd_reg' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[63]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[62]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[61]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[60]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[59]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[58]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[57]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[56]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[55]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[54]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[53]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[52]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[51]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[50]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[49]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[48]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[47]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[46]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[45]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[44]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[43]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[42]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[41]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[40]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[39]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[38]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[37]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[36]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[35]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[34]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[33]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[32]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[31]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[30]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[29]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[28]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[27]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[26]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[25]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[24]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[23]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[22]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[21]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[20]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[19]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[18]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[17]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[16]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[15]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[14]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[13]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[12]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[11]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[10]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[9]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[8]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[7]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[6]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[5]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[4]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[3]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[2]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[1]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[0]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[63]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[62]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[61]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[60]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[59]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[58]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[57]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[56]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[55]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[54]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[53]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[52]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[51]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[50]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[49]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[48]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[47]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[46]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[45]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[44]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[43]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[42]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[41]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[40]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[39]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[38]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[37]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[36]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[35]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[34]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[33]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[32]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[31]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[30]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[29]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[28]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[27]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[26]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[25]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[24]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[23]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[22]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[21]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[20]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[19]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[18]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[17]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[16]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[15]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[14]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[13]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[12]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[11]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[10]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[9]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[8]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[7]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[6]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[5]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[4]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[3]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[2]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[1]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[0]' [D:/OneDrive/EECS 31L/Final/datamemory.sv:45]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 763.621 ; gain = 519.168
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 749.504 ; gain = 505.313
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -383,16 +412,15 @@ Detailed RTL Component Info :
 	                9 Bit    Registers := 2     
 	                2 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     64 Bit        Muxes := 69    
-	   3 Input     52 Bit        Muxes := 1     
-	   5 Input     52 Bit        Muxes := 1     
-	   4 Input     12 Bit        Muxes := 2     
-	   2 Input      8 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 5     
+	   5 Input     52 Bit        Muxes := 2     
+	   3 Input     12 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 5     
 	   4 Input      4 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 4     
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 136   
+	   2 Input      1 Bit        Muxes := 105   
 	   5 Input      1 Bit        Muxes := 2     
 	   6 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 2     
@@ -414,15 +442,13 @@ Detailed RTL Component Info :
 Module regfile 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input     64 Bit        Muxes := 64    
-	   2 Input      1 Bit        Muxes := 64    
+	   2 Input      1 Bit        Muxes := 32    
 Module imm_Gen 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   3 Input     52 Bit        Muxes := 1     
-	   5 Input     52 Bit        Muxes := 1     
-	   4 Input     12 Bit        Muxes := 2     
-	   2 Input      8 Bit        Muxes := 1     
+	   5 Input     52 Bit        Muxes := 2     
+	   3 Input     12 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 1     
 	   5 Input      2 Bit        Muxes := 1     
 Module mux2 
 Detailed RTL Component Info : 
@@ -444,6 +470,8 @@ Module datapath
 Detailed RTL Component Info : 
 +---Registers : 
 	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
 Module controller 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -482,41 +510,12 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "Memory_reg[63]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Memory_reg[62]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[61]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[60]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[59]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[58]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[57]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[56]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[55]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[54]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[53]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[52]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[51]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[50]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[49]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[48]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[47]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[46]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[45]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[44]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[43]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[42]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[41]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[40]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[39]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[38]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[37]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[36]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[35]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[34]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[33]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[32]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[31]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Memory_reg[30]" won't be mapped to RAM because it is too sparse
 INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-6014] Unused sequential element clk_divide_reg was removed.  [D:/OneDrive/EECS 31L/Final/basys3_wrapper.sv:38]
 WARNING: [Synth 8-3917] design basys3_wrapper has port dp driven by constant 1
+WARNING: [Synth 8-3331] design datamemory has unconnected port a[2]
+WARNING: [Synth 8-3331] design datamemory has unconnected port a[1]
+WARNING: [Synth 8-3331] design datamemory has unconnected port a[0]
 WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[1]
 WARNING: [Synth 8-3331] design instructionmemory has unconnected port ra[0]
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[31][63]) is unused and will be removed from module regfile.
@@ -621,7 +620,7 @@ WARNING: [Synth 8-3332] Sequential element (reg_file_reg[29][61]) is unused and 
 WARNING: [Synth 8-3332] Sequential element (reg_file_reg[29][60]) is unused and will be removed from module regfile.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 763.621 ; gain = 519.168
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 749.504 ; gain = 505.313
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -633,13 +632,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 763.621 ; gain = 519.168
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 749.504 ; gain = 505.313
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 763.621 ; gain = 519.168
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 749.504 ; gain = 505.313
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -651,7 +650,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 787.000 ; gain = 542.547
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 774.633 ; gain = 530.441
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -675,7 +674,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 787.000 ; gain = 542.547
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 774.633 ; gain = 530.441
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -688,7 +687,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 787.000 ; gain = 542.547
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 774.633 ; gain = 530.441
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -700,25 +699,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 787.000 ; gain = 542.547
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 774.633 ; gain = 530.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 787.000 ; gain = 542.547
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 774.633 ; gain = 530.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 787.000 ; gain = 542.547
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 774.633 ; gain = 530.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 787.000 ; gain = 542.547
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 774.633 ; gain = 530.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -737,16 +736,16 @@ Report Cell Usage:
 |1     |BUFG   |     2|
 |2     |CARRY4 |    11|
 |3     |LUT1   |     3|
-|4     |LUT2   |    15|
-|5     |LUT3   |    40|
-|6     |LUT4   |   145|
-|7     |LUT5   |    48|
-|8     |LUT6   |   625|
-|9     |MUXF7  |   193|
-|10    |MUXF8  |    72|
-|11    |FDCE   |     2|
-|12    |FDRE   |   553|
-|13    |LD     |  1063|
+|4     |LUT2   |    28|
+|5     |LUT3   |    25|
+|6     |LUT4   |    23|
+|7     |LUT5   |    41|
+|8     |LUT6   |   638|
+|9     |MUXF7  |   202|
+|10    |MUXF8  |    77|
+|11    |FDCE   |   528|
+|12    |FDRE   |    27|
+|13    |LD     |  1060|
 |14    |IBUF   |     2|
 |15    |OBUF   |    12|
 +------+-------+------+
@@ -755,37 +754,37 @@ Report Instance Areas:
 +------+----------------+------------------+------+
 |      |Instance        |Module            |Cells |
 +------+----------------+------------------+------+
-|1     |top             |                  |  2786|
-|2     |  processor_31L |RISC_V            |  2727|
-|3     |    DP          |datapath          |  2727|
-|4     |      IM        |instructionmemory |    16|
+|1     |top             |                  |  2679|
+|2     |  processor_31L |RISC_V            |  2620|
+|3     |    DP          |datapath          |  2620|
+|4     |      IM        |instructionmemory |    18|
 |5     |      ad        |adder             |     8|
 |6     |      dm        |datamemory        |  1520|
-|7     |      dp_alu    |alu               |   106|
-|8     |      flipflop  |flopr             |   288|
-|9     |      rf        |regfile           |   782|
+|7     |      dp_alu    |alu               |   113|
+|8     |      flipflop  |flopr             |   127|
+|9     |      rf        |regfile           |   827|
 |10    |  seg_display0  |seg_display       |     8|
 +------+----------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 787.000 ; gain = 542.547
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 774.633 ; gain = 530.441
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 4796 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 787.000 ; gain = 188.176
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 787.000 ; gain = 542.547
+Synthesis finished with 0 errors, 0 critical warnings and 4816 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 774.633 ; gain = 179.816
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 774.633 ; gain = 530.441
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1341 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-17] Analyzing 1352 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1063 instances were transformed.
-  LD => LDCE: 1063 instances
+  A total of 1060 instances were transformed.
+  LD => LDCE: 1060 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-144 Infos, 289 Warnings, 0 Critical Warnings and 0 Errors encountered.
+145 Infos, 288 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 787.000 ; gain = 555.102
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 774.633 ; gain = 543.523
 INFO: [Common 17-1381] The checkpoint 'D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/synth_1/basys3_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file basys3_wrapper_utilization_synth.rpt -pb basys3_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 787.000 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Dec  7 23:07:25 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 774.633 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 11 23:34:16 2017...
