@@ -1,0 +1,96 @@
+/*
+
+Xilinx Vivado v2017.3 (64-bit) [Major: 2017, Minor: 3]
+SW Build: 2018833 on Wed Oct  4 19:58:22 MDT 2017
+IP Build: 2016188 on Wed Oct  4 21:52:56 MDT 2017
+
+Process ID: 25984
+License: Customer
+
+Current time: 	Tue Dec 12 21:20:11 PST 2017
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 46 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.3/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.3/tps/win64/jre/bin/java.exe
+
+User name: 	Jerry
+User home directory: C:/Users/Jerry
+User working directory: D:/OneDrive/EECS 31L/Final/RISCV
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.3
+RDI_DATADIR: C:/Xilinx/Vivado/2017.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.3/bin
+
+User preferences location: C:/Users/Jerry/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/Jerry/AppData/Roaming/Xilinx/Vivado/2017.3/vivado.xml
+Vivado layouts directory: C:/Users/Jerry/AppData/Roaming/Xilinx/Vivado/2017.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/OneDrive/EECS 31L/Final/RISCV/vivado.log
+Vivado journal file location: 	D:/OneDrive/EECS 31L/Final/RISCV/vivado.jou
+Engine tmp dir: 	D:/OneDrive/EECS 31L/Final/RISCV/.Xil/Vivado-25984-DESKTOP-RJ2BKFQ
+
+GUI allocated memory:	191 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 656 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\OneDrive\EECS 31L\Final\RISCV\RISCV.xpr. Version: Vivado v2017.3 
+// bs (cl):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 71 MB (+71700kb) [00:00:04]
+// [Engine Memory]: 503 MB (+376281kb) [00:00:04]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 119 MB (+46628kb) [00:00:05]
+// [Engine Memory]: 582 MB (+56493kb) [00:00:05]
+// [GUI Memory]: 129 MB (+4635kb) [00:00:06]
+// [Engine Memory]: 636 MB (+25740kb) [00:00:06]
+// [GUI Memory]: 143 MB (+7907kb) [00:00:06]
+// Tcl Message: open_project {D:/OneDrive/EECS 31L/Final/RISCV/RISCV.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.3/data/ip'. 
+// Project name: RISCV; location: D:/OneDrive/EECS 31L/Final/RISCV; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bs (cl)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 670 MB (+2002kb) [00:00:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 670 MB. GUI used memory: 45 MB. Current time: 12/12/17 9:20:13 PM PST
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, basys3_wrapper (basys3_wrapper.sv)]", 1); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, basys3_wrapper (basys3_wrapper.sv), processor_31L : RISC_V (RISC-V.sv)]", 2, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, basys3_wrapper (basys3_wrapper.sv), processor_31L : RISC_V (RISC-V.sv)]", 2, true, false, false, false, false, true); // B (D, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, basys3_wrapper (basys3_wrapper.sv), processor_31L : RISC_V (RISC-V.sv), DP : datapath (datapath.sv)]", 3, true); // B (D, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, basys3_wrapper (basys3_wrapper.sv), processor_31L : RISC_V (RISC-V.sv), DP : datapath (datapath.sv), IM : instructionmemory (instructionmemory.sv)]", 6, false, false, false, false, false, true); // B (D, cl) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, basys3_wrapper (basys3_wrapper.sv), processor_31L : RISC_V (RISC-V.sv), DP : datapath (datapath.sv), flipflop : flopr (flopr.sv)]", 4, false); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, basys3_wrapper (basys3_wrapper.sv), processor_31L : RISC_V (RISC-V.sv), DP : datapath (datapath.sv), flipflop : flopr (flopr.sv)]", 4, false, false, false, false, false, true); // B (D, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, basys3_wrapper (basys3_wrapper.sv), processor_31L : RISC_V (RISC-V.sv), DP : datapath (datapath.sv), rf : regfile (regfile.sv)]", 7, false); // B (D, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, basys3_wrapper (basys3_wrapper.sv), processor_31L : RISC_V (RISC-V.sv), DP : datapath (datapath.sv), rf : regfile (regfile.sv)]", 7, false, false, false, false, false, true); // B (D, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "flopr.sv", 2); // k (j, cl)
