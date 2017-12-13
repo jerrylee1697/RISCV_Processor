@@ -163,3 +163,4 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property PROGRAM.FILE {D:/OneDrive/EECS 31L/Final/RISCV/RISCV.runs/impl_1/basys3_wrapper.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_sim
