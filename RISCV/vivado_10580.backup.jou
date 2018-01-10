@@ -2,19 +2,13 @@
 # Vivado v2017.3 (64-bit)
 # SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
 # IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-# Start of session at: Sat Dec  9 00:05:18 2017
-# Process ID: 2960
+# Start of session at: Wed Dec 13 02:15:56 2017
+# Process ID: 10580
 # Current directory: D:/OneDrive/EECS 31L/Final/RISCV
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11864 D:\OneDrive\EECS 31L\Final\RISCV\RISCV.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4976 D:\OneDrive\EECS 31L\Final\RISCV\RISCV.xpr
 # Log file: D:/OneDrive/EECS 31L/Final/RISCV/vivado.log
 # Journal file: D:/OneDrive/EECS 31L/Final/RISCV\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {D:/OneDrive/EECS 31L/Final/RISCV/RISCV.xpr}
 update_compile_order -fileset sources_1
-launch_simulation
-source tb_RISC_V.tcl
-add_wave {{/tb_RISC_V/tb_RISC_V/DP}} 
-add_wave {{/tb_RISC_V/tb_RISC_V/DP/rf}} 
-relaunch_sim
-close_sim

@@ -1,0 +1,330 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 16008
+License: Customer
+
+Current time: 	12/5/17 8:48:37 AM PST
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1829x1029
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 365 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/WINDOWS/Sun/Java/bin;C:/WINDOWS/system32;C:/WINDOWS;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/ProgramData/Oracle/Java/javapath;C:/Program Files (x86)/Razer Chroma SDK/bin;C:/Program Files/Razer Chroma SDK/bin;C:/Program Files (x86)/Intel/iCLS Client/;C:/Program Files/Intel/iCLS Client/;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files/Intel/Intel(R) Management Engine Components/IPT;C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps;C:/MinGW/bin;C:/MinGW/msys/1.0/bin;;C:/Program Files/PuTTY/;C:/Program Files/Git/cmd;C:/Users/jerry/AppData/Local/Microsoft/WindowsApps;C:/Program Files/Microsoft VS Code/bin;C:/Program Files/Heroku/bin;C:/Users/jerry/AppData/Local/atom/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	jerry
+User home directory: C:/Users/jerry
+User working directory: C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/jerry/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/jerry/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/jerry/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV/.Xil/Vivado-16008-LAPTOP-6R1QLAMU
+
+GUI allocated memory:	170 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 479 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// HOptionPane Warning: 'This project was created with a future version of Vivado. It will be opened in read-only mode for the protection of unrecognized data. Please use 'File | Save Project As...' if you need to alter a copy of this project. The project may or may not open reliably with this version of Vivado. OK to proceed and open the project? (Future Project Version)'
+// [GUI Memory]: 41 MB (+40458kb) [00:00:06]
+// [Engine Memory]: 464 MB (+335350kb) [00:00:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 479 MB. GUI used memory: 35 MB. Current time: 12/5/17 8:48:39 AM PST
+// bs:g (cg:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\jerry\OneDrive\EECS 31L\FInal\RISCV\RISCV.xpr. Version: Vivado v2017.3 
+selectButton("PAResourceOtoP.PABaseTab_THIS_PROJECT_WILL_BE_OPENED_IN_READ_ONLY_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV/RISCV.xpr} 
+// Tcl Message: open_project {C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV/RISCV.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/OneDrive/EECS 31L/FInal/RISCV' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 48 MB (+4937kb) [00:00:24]
+// [Engine Memory]: 557 MB (+72498kb) [00:00:24]
+// [GUI Memory]: 53 MB (+2696kb) [00:00:25]
+// [GUI Memory]: 60 MB (+4766kb) [00:00:25]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 572 MB. GUI used memory: 39 MB. Current time: 12/5/17 8:48:55 AM PST
+// Project name: RISCV; location: C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// z:x (cg:JFrame): Project is Read-Only: addNotify
+// a:a (cg:JFrame): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, z:x)
+dismissDialog("Project is Read-Only"); // z:x (cg:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cg:JFrame)
+// PAPropertyPanels.initPanels (Instructionmemory_tb.sv) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Instructionmemory_tb (Instructionmemory_tb.sv)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Instructionmemory_tb (Instructionmemory_tb.sv)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Instructionmemory_tb (Instructionmemory_tb.sv)]", 1, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// [GUI Memory]: 69 MB (+6754kb) [00:00:37]
+selectCodeEditor("Instructionmemory_tb.sv", 297, 280); // C:bI (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 297, 280); // C:bI (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Instructionmemory_tb (Instructionmemory_tb.sv)]", 8, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Instructionmemory_tb (Instructionmemory_tb.sv)]", 8, true, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// HOptionPane Warning: 'Project 'RISCV' is read-only. To save your work, use 'File | Save Project As' or click the 'Save Project As' button. (Read-Only Project)'
+selectButton("PAResourceOtoP.PABaseTab_READ_ONLY_PROJECT_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Instructionmemory_tb (Instructionmemory_tb.sv)]", 8, true, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// HOptionPane Warning: 'Project 'RISCV' is read-only. To save your work, use 'File | Save Project As' or click the 'Save Project As' button. (Read-Only Project)'
+// 'cR' command handler elapsed time: 3 seconds
+selectButton("PAResourceOtoP.PABaseTab_READ_ONLY_PROJECT_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SAVE_PROJECT_AS, "Save Project As..."); // ac:JMenuItem (JPopupMenu:JComponent, cg:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_PROJECT_AS
+// aD:p (cg:JFrame): Save Project As: addNotify
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "RISCV", true); // X:JTextField (JPanel:JComponent, aD:p)
+// HOptionPane Error: 'Project 'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV/RISCV.xpr' is already open. Please choose another project file location. (Save Project As)'
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aD:p)
+selectButton("PAResourceOtoP.ProjectNameChooser_PROJECT_ALREADY_OPEN_PLEASE_CHOOSE_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "RISCV_1", true); // X:JTextField (JPanel:JComponent, aD:p)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aD:p)
+// 'o' command handler elapsed time: 11 seconds
+// TclEventType: PROJECT_RENAME
+dismissDialog("Save Project As"); // aD:p (cg:JFrame)
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bs:g (cg:JFrame):  Save Project As : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: save_project_as RISCV_1 {C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1} -force 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 77 MB (+4469kb) [00:01:42]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PROJECT_RENAME
+// bs:g (cg:JFrame):  Save Constraints : addNotify
+dismissDialog("Save Constraints"); // bs:g (cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Instructionmemory_tb (Instructionmemory_tb.sv)]", 8, true, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top Instructionmemory_tb [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 86 MB (+5029kb) [00:01:53]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'Instructionmemory_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvlog -m64 --relax -L xil_defaultlib -prj Instructionmemory_tb_vlog.prj" INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jerry/OneDrive/EECS 31L/FInal/instructionmemory.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module instructionmemory INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jerry/OneDrive/EECS 31L/FInal/Instructionmemory_tb.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module Instructionmemory_tb INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module glbl 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 5 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// a:a (cg:JFrame): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cg:JFrame)
+// [Engine Memory]: 590 MB (+5646kb) [00:02:09]
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 590 MB. GUI used memory: 43 MB. Current time: 12/5/17 8:50:39 AM PST
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1]", 21); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instructionmemory_tb.sv", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 207, 194); // C:bI (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 183 seconds
+selectCodeEditor("Instructionmemory_tb.sv", 101, 377); // C:bI (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 85, 371); // C:bI (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Instructionmemory_tb (Instructionmemory_tb.sv)]", 7); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Instructionmemory_tb (Instructionmemory_tb.sv), Instructionmemory_tb : instructionmemory (instructionmemory.sv)]", 8, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Instructionmemory_tb (Instructionmemory_tb.sv), Instructionmemory_tb : instructionmemory (instructionmemory.sv)]", 8, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instructionmemory_tb.sv", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "instructionmemory.sv", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instructionmemory_tb.sv", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 161, 368); // C:bI (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 57, 342); // C:bI (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 73, 346); // C:bI (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 85, 349); // C:bI (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 96, 337); // C:bI (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "instructionmemory.sv", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Instructionmemory_tb (Instructionmemory_tb.sv)]", 7, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Instructionmemory_tb (Instructionmemory_tb.sv)]", 7, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Instructionmemory_tb (Instructionmemory_tb.sv)]", 7, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Instructionmemory_tb (Instructionmemory_tb.sv)]", 7, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instructionmemory_tb.sv", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 75, 249); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 91 MB (+1376kb) [00:06:53]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'Instructionmemory_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvlog -m64 --relax -L xil_defaultlib -prj Instructionmemory_tb_vlog.prj" INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jerry/OneDrive/EECS 31L/FInal/instructionmemory.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module instructionmemory INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jerry/OneDrive/EECS 31L/FInal/Instructionmemory_tb.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module Instructionmemory_tb INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module glbl 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2017.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4aed1e5755174c37a61c4d0cda5280c1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Instructionmemory_tb_behav xil_defaultlib.Instructionmemory_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration ERROR: [VRFC 10-1546] variable ra might have multiple concurrent drivers [C:/Users/jerry/OneDrive/EECS 31L/FInal/Instructionmemory_tb.sv:36] ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed. 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 4 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// a:a (cg:JFrame): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cg:JFrame)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "instructionmemory.sv", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instructionmemory_tb.sv", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 74 seconds
+selectCodeEditor("Instructionmemory_tb.sv", 97, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("Instructionmemory_tb.sv", 142, 294); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'Instructionmemory_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvlog -m64 --relax -L xil_defaultlib -prj Instructionmemory_tb_vlog.prj" INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jerry/OneDrive/EECS 31L/FInal/instructionmemory.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module instructionmemory INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jerry/OneDrive/EECS 31L/FInal/Instructionmemory_tb.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module Instructionmemory_tb INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module glbl 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2017.2 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 4aed1e5755174c37a61c4d0cda5280c1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Instructionmemory_tb_behav xil_defaultlib.Instructionmemory_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration ERROR: [VRFC 10-1546] variable ra might have multiple concurrent drivers [C:/Users/jerry/OneDrive/EECS 31L/FInal/Instructionmemory_tb.sv:36] ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed. 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 4 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// a:a (cg:JFrame): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 141, 292); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 86, 294); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 99 MB (+2689kb) [00:10:38]
+// Elapsed time: 91 seconds
+selectCodeEditor("Instructionmemory_tb.sv", 101, 161); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 161, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 197, 218); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 28, 211); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Instructionmemory_tb.sv", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 142, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Instructionmemory_tb.sv", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "instructionmemory.sv", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Instructionmemory_tb.sv", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 271, 293); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Instructionmemory_tb.sv", 134, 363); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'Instructionmemory_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvlog -m64 --relax -L xil_defaultlib -prj Instructionmemory_tb_vlog.prj" INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jerry/OneDrive/EECS 31L/FInal/instructionmemory.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module instructionmemory INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jerry/OneDrive/EECS 31L/FInal/Instructionmemory_tb.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module Instructionmemory_tb INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module glbl 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot Instructionmemory_tb_behav 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message:  ****** Webtalk v2017.2 (64-bit)   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source C:/Users/jerry/OneDrive/EECS -notrace couldn't read file "C:/Users/jerry/OneDrive/EECS": permission denied INFO: [Common 17-206] Exiting Webtalk at Tue Dec  5 09:00:09 2017... 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "Instructionmemory_tb_behav -key {Behavioral:sim_1:Functional:Instructionmemory_tb} -tclbatch {Instructionmemory_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, e:bs)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// Elapsed time: 31 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, e:bs)
+// 'd' command handler elapsed time: 40 seconds
+closeMainWindow("RISCV_1 - [C:/Users/jerry/OneDrive/EECS 31L/FInal/RISCV_1/RISCV_1.xpr] - Vivado 2017.2"); // cg:JFrame
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'
